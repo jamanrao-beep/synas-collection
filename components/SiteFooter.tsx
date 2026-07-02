@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteFooter.module.css';
-import whiteLogo from '@/public/white-logo.jpeg';
+import footerLogo from '@/public/footer_logo.png';
 
 export default function SiteFooter() {
     return (
@@ -19,11 +19,10 @@ export default function SiteFooter() {
                 <div className={styles.brandCol}>
                     <Link href="/" className={styles.logoWrap} aria-label="Syna's Collection — Home">
                         <Image
-                            src={whiteLogo}
+                            src={footerLogo}
                             alt="Syna's Collection"
                             width={220}
                             height={55}
-                            className={styles.logoImage}
                             style={{ objectFit: 'contain' }}
                         />
                     </Link>
