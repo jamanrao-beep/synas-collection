@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteHeader.module.css';
@@ -16,7 +17,9 @@ const NAV_LINKS = [
     { label: 'Contact', href: '/contact' },
 ];
 
-export default function SiteHeader({ activeHref = '/' }: { activeHref?: string }) {
+export default function SiteHeader() {
+    const pathname = usePathname();
+    const activeHref = pathname || '/';
     const [menuOpen, setMenuOpen] = useState(false);
     const [navHidden, setNavHidden] = useState(false);
 
