@@ -1,0 +1,75 @@
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './SiteHeader.module.css';
+
+const NAV_LINKS = [
+    { label: 'Home', href: '/' },
+    { label: 'Our Story', href: '/our-story' },
+    { label: 'The Artistry', href: '/the-artistry' },
+    { label: 'Premium Collections', href: '/premium-collections' },
+    { label: 'Syna Diaries', href: '/syna-diaries' },
+    { label: 'Contact', href: '/contact' },
+];
+
+export default function SiteHeader({ activeHref = '/' }: { activeHref?: string }) {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    return (
+        <>
+            <header className={styles.siteHeader}>
+                <div className={styles.headerInner}>
+                    <button
+                        className={styles.menuToggle}
+                        aria-label="Toggle navigation menu"
+                        aria-expanded={menuOpen}
+                        onClick={() => setMenuOpen((open) => !open)}
+                    >
+                        <span />
+                        <span />
+                        <span />
+                    </button>
+
+                    <Link href="/" className={styles.logoWrap} aria-label="Syna's Collection — Home">
+                        {/* Default state: white logo on the teal header */}
+                        <Image
+                            src="/white-logo.jpeg"
+                            alt="Syna's Collection"
+                            width={280}
+                            height={70}
+                            priority
+                            className={`${styles.logoWhite}`}
+                            style={{ objectFit: 'contain' }}
+                        />
+                        {/* Hover state: header turns white, bronze/gold logo fades in */}
+                        <Image
+                            src="/bronze-logo.jpeg"
+                            alt="Syna's Collection"
+                            width={280}
+                            height={70}
+                            priority
+                            className={`${styles.logoBronze}`}
+                            style={{ objectFit: 'contain' }}
+                        />
+                    </Link>
+                </div>
+            </header>
+
+            <nav className={styles.tabNav}>
+                <div className={`${styles.tabNavInner} ${menuOpen ? styles.open : ''}`}>
+                    {NAV_LINKS.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={link.href === activeHref ? styles.active : undefined}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+                </div>
+            </nav>
+        </>
+    );
+}
