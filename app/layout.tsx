@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Marcellus, Cormorant_Garamond, Raleway, Playfair_Display, Cinzel } from 'next/font/google';
 import SiteHeader from '@/components/SiteHeader';
+import SiteFooter from '@/components/SiteFooter';
 import './globals.css';
 
 const marcellus = Marcellus({
@@ -50,6 +51,7 @@ export default function RootLayout({
       <body className={`${marcellus.variable} ${cormorant.variable} ${raleway.variable} ${playfair.variable} ${cinzel.variable}`}>
         <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
