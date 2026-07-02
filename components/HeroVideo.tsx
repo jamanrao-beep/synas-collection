@@ -4,7 +4,7 @@ export default function HeroVideo() {
             style={{
                 position: 'relative',
                 width: '100%',
-                aspectRatio: '16 / 9',
+                aspectRatio: '16 / 11',
                 overflow: 'hidden',
                 background: '#000',
             }}
@@ -21,12 +21,10 @@ export default function HeroVideo() {
                     display: 'block',
                 }}
             >
+                <source src="/Main.mp4" type="video/mp4" />
                 <source src="/Main.mov" type="video/quicktime" />
-                {/* .mov (H.264/QuickTime) plays natively in Safari; other browsers
-           will simply show nothing here if they can't decode it. If you
-           need broad cross-browser support, also export an .mp4 version
-           of the same file and add it as a second <source> above the
-           .mov line, e.g. <source src="/Main.mp4" type="video/mp4" /> */}
+                {/* .mp4 (H.264) plays natively on all modern browsers (Chrome/Edge/Firefox/Safari).
+                    .mov is kept as a fallback if needed. */}
                 Your browser does not support the video tag.
             </video>
         </section>

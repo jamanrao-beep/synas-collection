@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Marcellus, Cormorant_Garamond } from 'next/font/google';
+import { Marcellus, Cormorant_Garamond, Raleway, Playfair_Display, Cinzel } from 'next/font/google';
 import SiteHeader from '@/components/SiteHeader';
 import './globals.css';
 
@@ -11,8 +11,27 @@ const marcellus = Marcellus({
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-cormorant',
+});
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-raleway',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  style: ['normal', 'italic'],
+  variable: '--font-playfair',
+});
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-cinzel',
 });
 
 export const metadata: Metadata = {
@@ -28,7 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${marcellus.variable} ${cormorant.variable}`}>
+      <body className={`${marcellus.variable} ${cormorant.variable} ${raleway.variable} ${playfair.variable} ${cinzel.variable}`}>
         <SiteHeader />
         {children}
       </body>
