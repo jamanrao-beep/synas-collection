@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteHeader.module.css';
@@ -18,6 +18,26 @@ const NAV_LINKS = [
 
 export default function SiteHeader({ activeHref = '/' }: { activeHref?: string }) {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [navHidden, setNavHidden] = useState(false);
+
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+        
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY && currentScrollY > 150) {
+                // Scrolling down and past the top header
+                setNavHidden(true);
+            } else {
+                // Scrolling up
+                setNavHidden(false);
+            }
+            lastScrollY = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <>
@@ -58,8 +78,7 @@ export default function SiteHeader({ activeHref = '/' }: { activeHref?: string }
                     </Link>
                 </div>
             </header>
-
-            <nav className={styles.tabNav}>
+            <nav className={`${styles.tabNav} ${navHidden ? styles.navHidden : ''}`}>
                 <div className={`${styles.tabNavInner} ${menuOpen ? styles.open : ''}`}>
                     {NAV_LINKS.map((link) => (
                         <Link

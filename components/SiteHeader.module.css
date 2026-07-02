@@ -11,7 +11,7 @@
 
 /* ================= MAIN HEADER (textured) ================= */
 .siteHeader {
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -87,12 +87,17 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
     position: sticky;
-    top: 114px;
+    top: 0;
     z-index: 999;
     transition:
         background-color 0.5s var(--ease),
         border-color 0.5s var(--ease),
-        box-shadow 0.5s var(--ease);
+        box-shadow 0.5s var(--ease),
+        transform 0.4s var(--ease);
+}
+
+.tabNav.navHidden {
+    transform: translateY(-100%);
 }
 
 .tabNav:hover {
