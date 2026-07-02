@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteHeader.module.css';
+import whiteLogo from '@/public/white-logo.jpeg';
+import bronzeLogo from '@/public/bronze-logo.jpeg';
 
 const NAV_LINKS = [
     { label: 'Home', href: '/' },
@@ -35,20 +37,20 @@ export default function SiteHeader({ activeHref = '/' }: { activeHref?: string }
                     <Link href="/" className={styles.logoWrap} aria-label="Syna's Collection — Home">
                         {/* Default state: white logo on the teal header */}
                         <Image
-                            src="/white-logo.jpeg"
+                            src={whiteLogo}
                             alt="Syna's Collection"
-                            width={280}
-                            height={70}
+                            width={380}
+                            height={95}
                             priority
                             className={`${styles.logoWhite}`}
                             style={{ objectFit: 'contain' }}
                         />
                         {/* Hover state: header turns white, bronze/gold logo fades in */}
                         <Image
-                            src="/bronze-logo.jpeg"
+                            src={bronzeLogo}
                             alt="Syna's Collection"
-                            width={280}
-                            height={70}
+                            width={380}
+                            height={95}
                             priority
                             className={`${styles.logoBronze}`}
                             style={{ objectFit: 'contain' }}

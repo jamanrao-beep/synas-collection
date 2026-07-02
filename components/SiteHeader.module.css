@@ -42,7 +42,8 @@
 /* Logo */
 .logoWrap {
     position: relative;
-    height: 70px;
+    height: 95px;
+    width: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,10 +61,12 @@
 
 .logoWhite {
     opacity: 1;
+    mix-blend-mode: screen; /* Removes black background */
 }
 
 .logoBronze {
     opacity: 0;
+    mix-blend-mode: multiply; /* Removes white background (if any) */
 }
 
 .siteHeader:hover .logoWhite {
