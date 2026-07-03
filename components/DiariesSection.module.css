@@ -1,0 +1,271 @@
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.glassBox {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Left Brand Column */
+.brandCol {
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.02);
+}
+
+.avatarWrap {
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #3f2a1b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5c9b3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.brandTitle {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 16px;
+    font-weight: 400;
+}
+
+.facebookDesc {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    margin: -8px 0 16px;
+}
+
+.ratingBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.score {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.reviewCount, .poweredBy {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 4px;
+}
+
+.actionButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 24px;
+    transition: opacity 0.2s;
+}
+
+.actionButton:hover {
+    opacity: 0.9;
+}
+
+.actionButton svg {
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+/* Right Carousel Column */
+.carouselCol {
+    flex-grow: 1;
+    min-width: 0; /* CRITICAL: prevents flex item from overflowing the container */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navButton {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.navButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 32px;
+    width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.cardAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.cardMeta {
+    flex-grow: 1;
+}
+
+.cardAuthor {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.cardDate {
+    font-size: 11px;
+    color: #888;
+}
+
+.cardIcon {
+    opacity: 0.8;
+}
+
+.cardStars {
+    color: #ffd700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.cardText {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Dots */
+.dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.activeDot {
+    background: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .glassBox {
+        flex-direction: column;
+        padding: 16px 10px;
+    }
+    .brandCol {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 24px 12px;
+        margin-bottom: 20px;
+    }
+    .carouselCol {
+        padding: 0;
+    }
+    .slider {
+        padding: 0 10px;
+        gap: 12px;
+    }
+    .card {
+        min-width: 85vw; /* allow it to fit inside the screen nicely on mobile */
+    }
+    .navButton {
+        display: none; /* Hide manual arrows on mobile since they take up space, users can swipe */
+    }
+}
