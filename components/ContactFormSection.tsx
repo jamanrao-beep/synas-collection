@@ -67,7 +67,9 @@ export default function ContactFormSection() {
                                 </div>
                                 <div className={styles.contactText}>
                                     <span className={styles.contactLabel}>FOLLOW & DISCOVER</span>
-                                    <span className={styles.contactValue}>@synascollection &middot; Instagram & Facebook</span>
+                                    <span className={styles.contactValue}>
+                                        @synascollection &middot; <a href="https://www.instagram.com/synascollection/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Instagram</a> & <a href="https://www.facebook.com/synascollection/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Facebook</a>
+                                    </span>
                                 </div>
                             </div>
                         </div>

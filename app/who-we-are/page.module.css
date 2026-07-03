@@ -1,0 +1,92 @@
+.main {
+    background-color: #0d0b09; /* Very dark background from screenshot */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    position: relative;
+}
+
+.topSubtitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.subtitleText {
+    font-family: var(--font-cinzel), serif;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    color: #b09060;
+    text-transform: uppercase;
+}
+
+.dot {
+    color: #b09060;
+    font-size: 10px;
+}
+
+.title {
+    font-family: var(--font-cormorant), serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.italicText {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+    color: #c2a373; /* soft gold */
+}
+
+.description {
+    font-family: var(--font-cormorant), serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #8f8273; /* muted taupe/gold */
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.verticalLine {
+    width: 1px;
+    height: 60px;
+    /* Gradient from solid gold to transparent */
+    background: linear-gradient(to bottom, #b09060 0%, rgba(176, 144, 96, 0) 100%);
+    margin: 0 auto;
+}
+
+.whatsappFloat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+    z-index: 1000;
+}
+
+.whatsappFloat:hover {
+    transform: scale(1.05);
+}
