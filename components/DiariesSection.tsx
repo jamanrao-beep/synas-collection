@@ -70,15 +70,15 @@ const FACEBOOK_REVIEWS: Review[] = [
         initial: 'P',
         date: 'Jun 2018',
         text: 'Great stuff for my wife, thanks for the last minute delivery arranged across borders. Service and quality both exceeded expectations.',
-        color: '#ff9800'
+        color: '#d69e3e'
     },
     {
         id: 'f3',
-        author: 'Neha Verma',
-        initial: 'N',
-        date: 'Oct 2023',
-        text: 'Beautiful designs and excellent craftsmanship. The packaging was also very premium. Will definitely buy again.',
-        color: '#6c63ff'
+        author: 'Sharmila Sid',
+        initial: 'S',
+        date: 'Mar 2018',
+        text: 'I love the statement earrings from Syna\'s collection — bought for my wedding anniversary, wore them to the temple and in the evening. Got loads of compliments! Twinkle is very professional and easy to deal with.',
+        color: '#68b36b'
     },
     {
         id: 'f4',
@@ -112,6 +112,34 @@ export default function DiariesSection({ platform }: { platform: 'google' | 'fac
         }, 5000);
         return () => clearInterval(interval);
     }, [reviews.length]);
+
+    const handlePrev = () => {
+        setActiveIndex((current) => {
+            const nextIndex = current === 0 ? reviews.length - 1 : current - 1;
+            if (sliderRef.current) {
+                const cardWidth = sliderRef.current.children[0].clientWidth;
+                sliderRef.current.scrollTo({
+                    left: nextIndex * (cardWidth + 20),
+                    behavior: 'smooth'
+                });
+            }
+            return nextIndex;
+        });
+    };
+
+    const handleNext = () => {
+        setActiveIndex((current) => {
+            const nextIndex = (current + 1) % reviews.length;
+            if (sliderRef.current) {
+                const cardWidth = sliderRef.current.children[0].clientWidth;
+                sliderRef.current.scrollTo({
+                    left: nextIndex * (cardWidth + 20),
+                    behavior: 'smooth'
+                });
+            }
+            return nextIndex;
+        });
+    };
     
     return (
         <section className={styles.container}>
@@ -159,7 +187,7 @@ export default function DiariesSection({ platform }: { platform: 'google' | 'fac
 
                 {/* Right Carousel Column */}
                 <div className={styles.carouselCol}>
-                    <button className={styles.navButton} aria-label="Previous">‹</button>
+                    <button className={styles.navButton} onClick={handlePrev} aria-label="Previous">‹</button>
                     
                     <div className={styles.slider} ref={sliderRef}>
                         {reviews.map((review) => (
@@ -190,7 +218,7 @@ export default function DiariesSection({ platform }: { platform: 'google' | 'fac
                         ))}
                     </div>
 
-                    <button className={styles.navButton} aria-label="Next">›</button>
+                    <button className={styles.navButton} onClick={handleNext} aria-label="Next">›</button>
                 </div>
 
                 <div className={styles.dots}>
