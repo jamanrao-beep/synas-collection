@@ -254,7 +254,7 @@
 
 /* --- THE JOURNEY SECTION --- */
 .journeySection {
-    background-color: #f1ebd9; /* Lighter beige from the new screenshot */
+    background-color: #f8f6f0; /* Lighter, whiter beige */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -267,7 +267,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    max-width: 1200px; /* Increased to allow title to stay on a single line */
     margin-bottom: 80px;
     padding: 0 20px;
 }
@@ -348,9 +348,9 @@
     border: 1px solid #a4865d;
     border-radius: 50%;
     position: absolute;
-    top: -7px;
+    top: 73px; /* Aligned horizontally with the center of the huge numbers */
     left: -6.5px;
-    background-color: #f1ebd9;
+    background-color: #f8f6f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,7 +416,7 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .timelineGrid {
         display: flex;
         flex-direction: column;
