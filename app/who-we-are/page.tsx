@@ -22,12 +22,257 @@ export default function WhoWeArePage() {
                 <div className={styles.verticalLine}></div>
             </div>
 
-            {/* Floating WhatsApp Button */}
-            <a href="https://wa.me/15085079623" target="_blank" rel="noopener noreferrer" className={styles.whatsappFloat} aria-label="Chat on WhatsApp">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
-                </svg>
-            </a>
+            {/* --- THE BRAND DIVIDER --- */}
+            <div className={styles.sectionDivider}>
+                <div className={`${styles.dividerLine} ${styles.dividerLineLeft}`}></div>
+                <div className={styles.dividerText}>THE BRAND</div>
+                <div className={`${styles.dividerLine} ${styles.dividerLineRight}`}></div>
+            </div>
+
+            {/* --- SECTION 1: Crafted for Those Who Refuse the Ordinary --- */}
+            <div className={styles.contentGrid}>
+                {/* Image Col Left */}
+                <div className={styles.imageCol}>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                    
+                    <div className={styles.imagePlaceholderText}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        BRAND / COLLECTION IMAGE
+                    </div>
+                </div>
+
+                {/* Text Col Right */}
+                <div className={styles.textCol}>
+                    <div className={styles.sectionSubtitle}>EST. 2013 &nbsp;&middot;&nbsp; CROSS-BORDER LUXURY</div>
+                    <h2 className={styles.sectionTitle}>
+                        Crafted for Those Who <i className={styles.italicText}>Refuse</i><br />
+                        the Ordinary
+                    </h2>
+                    <div className={styles.shortLine}></div>
+                    
+                    <p className={styles.bodyText}>
+                        Syna's CoLection is not a brand that follows trends — it defines them. A cross-border luxury jewelry house rooted in the belief that every piece deserves to be extraordinary, we exist at the precise intersection of heritage artistry and modern elegance.
+                    </p>
+                    <p className={styles.bodyText}>
+                        Nothing we create is mass produced. Every design is individually crafted — built with premium finishing, timeless attention to detail, and a refined sensibility that speaks without effort.
+                    </p>
+
+                    <div className={styles.statsRow}>
+                        <div className={styles.statItem}>
+                            <span className={styles.statNumber}>13</span>
+                            <span className={styles.statLabel}>YEARS OF CRAFT</span>
+                        </div>
+                        <div className={styles.statItem}>
+                            <span className={styles.statNumber}>2</span>
+                            <span className={styles.statLabel}>INTERNATIONAL PRESENCES</span>
+                        </div>
+                        <div className={styles.statItem}>
+                            <span className={styles.statNumber}>0</span>
+                            <span className={styles.statLabel}>MASS PRODUCED PIECES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Subtle Separator */}
+            <div className={styles.blockSeparator}>
+                <div className={styles.blockSeparatorLine}></div>
+                <div className={styles.blockSeparatorDiamond}></div>
+                <div className={styles.blockSeparatorLine}></div>
+            </div>
+
+            {/* --- SECTION 2: Where Hands of Yesterday Meet Today's Vision --- */}
+            <div className={styles.contentGrid}>
+                {/* Text Col Left */}
+                <div className={styles.textCol}>
+                    <div className={styles.sectionSubtitle}>THE SIGNATURE RANGE &nbsp;&middot;&nbsp; ANTIQUE SILVER</div>
+                    <h2 className={styles.sectionTitle}>
+                        Where Hands of <i className={styles.italicText}>Yesterday</i> Meet<br />
+                        Today's Vision
+                    </h2>
+                    <div className={styles.shortLine}></div>
+                    
+                    <p className={styles.bodyText}>
+                        Our most celebrated range — the exclusive handcrafted silver designer collection — is a testament to what happens when rare heritage meets bold intention. We source antique silver elements handcrafted by master artisans of a bygone era and artfully merge them with newly handcrafted components.
+                    </p>
+                    <p className={styles.bodyText}>
+                        The result is a piece that carries history within it — yet feels entirely of this moment. Unmistakably Syna's CoLection. Impossible to replicate anywhere else.
+                    </p>
+
+                    <div className={styles.quoteBox}>
+                        <p className={styles.quoteText}>
+                            Each piece is a dialogue between eras — the discipline of the past, the vision of the present.
+                        </p>
+                        <span className={styles.quoteAuthor}>SYNA'S COLECTION &nbsp;&middot;&nbsp; DESIGN PHILOSOPHY</span>
+                    </div>
+                </div>
+
+                {/* Image Col Right */}
+                <div className={styles.imageCol}>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                    
+                    <div className={styles.imagePlaceholderText}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        CRAFT / ARTISAN PROCESS IMAGE
+                    </div>
+                </div>
+            </div>
+
+            {/* --- THE PEOPLE DIVIDER --- */}
+            <div className={styles.sectionDivider}>
+                <div className={`${styles.dividerLine} ${styles.dividerLineLeft}`}></div>
+                <div className={styles.dividerText}>THE PEOPLE</div>
+                <div className={`${styles.dividerLine} ${styles.dividerLineRight}`}></div>
+            </div>
+
+            {/* --- SECTION 3: Twinkle Morbia --- */}
+            <div className={styles.contentGrid}>
+                {/* Image Col Left */}
+                <div className={styles.imageCol}>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                    
+                    <div className={styles.imagePlaceholderText}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        TWINKLE MORBIA - PORTRAIT
+                    </div>
+                </div>
+
+                {/* Text Col Right */}
+                <div className={styles.textCol}>
+                    <div className={styles.sectionSubtitle}>FOUNDER &nbsp;&middot;&nbsp; DESIGNER &nbsp;&middot;&nbsp; VISIONARY</div>
+                    <h2 className={styles.sectionTitle}>
+                        Twinkle <i className={styles.italicText}>Morbia</i>
+                    </h2>
+                    <div className={styles.sectionSubSubtitle}>FOUNDER & CREATIVE DIRECTOR</div>
+                    <div className={styles.shortLine}></div>
+                    
+                    <p className={styles.bodyText}>
+                        Twinkle Morbia built Syna's CoLection from a singular conviction — that luxury jewelry should be felt, not just worn. Over 13 years, she has grown the brand into an internationally recognized name, crossing borders without ever compromising on craft or character.
+                    </p>
+                    <p className={styles.bodyText}>
+                        Her design philosophy is rooted in the rare: sourcing antique silver elements handcrafted by the masters of a bygone era and merging them with new handcrafted forms. Every piece she conceives is a statement — unhurried, deliberate, and entirely her own.
+                    </p>
+
+                    <div className={styles.achievementBox}>
+                        <div className={styles.achievementIcon}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                                <circle cx="12" cy="8" r="6"/>
+                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                            </svg>
+                        </div>
+                        <span className={styles.achievementText}>MID-DAY INDIA &nbsp;&middot;&nbsp; CROSS-BORDER LUXURY BRAND BUILDER 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Subtle Separator */}
+            <div className={styles.blockSeparator}>
+                <div className={styles.blockSeparatorLine}></div>
+                <div className={styles.blockSeparatorDiamond}></div>
+                <div className={styles.blockSeparatorLine}></div>
+            </div>
+
+            {/* --- SECTION 4: Mom's Name --- */}
+            <div className={styles.contentGrid}>
+                {/* Text Col Left */}
+                <div className={styles.textCol}>
+                    <div className={styles.sectionSubtitle}>THE FOUNDATION &nbsp;&middot;&nbsp; THE FIRST BELIEVER</div>
+                    <h2 className={styles.sectionTitle}>
+                        [Mom's <i className={styles.italicText}>Name</i>]
+                    </h2>
+                    <div className={styles.sectionSubSubtitle}>MATRIARCH &nbsp;&middot;&nbsp; BRAND PILLAR</div>
+                    <div className={styles.shortLine}></div>
+                    
+                    <p className={styles.bodyText}>
+                        Behind every bold venture is someone whose belief came first. [Mom's Name] has been the quiet strength behind Syna's CoLection — a presence whose values of dedication, grace, and authenticity are woven into the very identity of the brand.
+                    </p>
+                    <p className={styles.bodyText}>
+                        Her influence is not measured in titles — it is felt in the way the brand carries itself. In the patience of the craft. In the dignity of every detail. She is the roots from which everything else has grown.
+                    </p>
+                </div>
+
+                {/* Image Col Right */}
+                <div className={styles.imageCol}>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                    
+                    <div className={styles.imagePlaceholderText}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        MOM'S NAME - PORTRAIT
+                    </div>
+                </div>
+            </div>
+
+            {/* Subtle Separator */}
+            <div className={styles.blockSeparator}>
+                <div className={styles.blockSeparatorLine}></div>
+                <div className={styles.blockSeparatorDiamond}></div>
+                <div className={styles.blockSeparatorLine}></div>
+            </div>
+
+            {/* --- SECTION 5: Daughter's Name --- */}
+            <div className={styles.contentGrid}>
+                {/* Image Col Left */}
+                <div className={styles.imageCol}>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                    
+                    <div className={styles.imagePlaceholderText}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        DAUGHTER'S NAME - PORTRAIT
+                    </div>
+                </div>
+
+                {/* Text Col Right */}
+                <div className={styles.textCol}>
+                    <div className={styles.sectionSubtitle}>THE NEXT CHAPTER &nbsp;&middot;&nbsp; THE FUTURE VOICE</div>
+                    <h2 className={styles.sectionTitle}>
+                        [Daughter's <i className={styles.italicText}>Name</i>]
+                    </h2>
+                    <div className={styles.sectionSubSubtitle}>NEXT GENERATION &nbsp;&middot;&nbsp; BRAND LEGACY</div>
+                    <div className={styles.shortLine}></div>
+                    
+                    <p className={styles.bodyText}>
+                        [Daughter's Name] represents everything Syna's CoLection is building toward — a future where heritage does not fade, but evolves. Growing up surrounded by craft, intention, and an unwavering standard of beauty, she carries the brand's spirit forward with fresh eyes and deep roots.
+                    </p>
+                    <p className={styles.bodyText}>
+                        She is the reason the brand thinks in generations, not quarters. The legacy of Syna's CoLection does not end — it continues.
+                    </p>
+                </div>
+            </div>
         </main>
     );
 }
