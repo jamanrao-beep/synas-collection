@@ -399,21 +399,187 @@
 
 /* --- OUR PROMISE SECTION --- */
 .promiseSection {
-    background-color: #e6e0d4; /* Slightly darker beige peeking at the bottom of screenshot */
+    background-color: #e6e0d4; /* Darker beige from screenshot */
     width: 100%;
-    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 20px;
+    padding: 120px 0 0 0;
 }
 
-.promiseEyebrow {
+.promiseHeader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin-bottom: 80px;
+    padding: 0 20px;
+}
+
+.promiseHeader .eyebrow {
     font-family: var(--font-cinzel), serif;
     font-size: 8px;
     letter-spacing: 0.4em;
     color: #a4865d;
     text-transform: uppercase;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.promiseHeader h2 {
+    font-family: var(--font-cormorant), serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: #1a1614;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.promiseHeader h2 em {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+    color: #a4865d;
+}
+
+.promiseHeader .subtitle {
+    font-family: var(--font-cormorant), serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #6a5d4f;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.promiseHeader .hRule {
+    width: 60px;
+    height: 1px;
+    background-color: rgba(164, 134, 93, 0.3);
+}
+
+.promiseGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid rgba(164, 134, 93, 0.2);
+}
+
+.promiseCol {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.promiseCol.middle {
+    border-left: 1px solid rgba(164, 134, 93, 0.2);
+    border-right: 1px solid rgba(164, 134, 93, 0.2);
+}
+
+.promiseIcon {
+    color: #a4865d;
+    margin-bottom: 30px;
+}
+
+.promiseCol h3 {
+    font-family: var(--font-cormorant), serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #1a1614;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.promiseCol h3 em {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+    color: #1a1614;
+}
+
+.promiseCol p {
+    font-family: var(--font-cormorant), serif;
+    font-size: 17px;
+    color: #6a5d4f;
+    line-height: 2.0;
+    margin: 0;
+}
+
+/* --- WORK WITH US SECTION --- */
+.workWithUsSection {
+    background-color: #161311; /* Very dark charcoal/brown */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 140px;
+    text-align: center;
+}
+
+.workVerticalLine {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(164, 134, 93, 0) 0%, #a4865d 100%);
+    margin-bottom: 30px;
+}
+
+.workWithUsSection .eyebrow {
+    font-family: var(--font-cinzel), serif;
+    font-size: 8px;
+    letter-spacing: 0.4em;
+    color: #a4865d;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.workWithUsSection h2 {
+    font-family: var(--font-cormorant), serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #f8f6f0;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.workWithUsSection h2 em {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+    color: #b09060;
+}
+
+.workWithUsSection .description {
+    font-family: var(--font-cormorant), serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #8a7a6b;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.workBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(164, 134, 93, 0.5);
+    background-color: transparent;
+    color: #a4865d;
+    font-family: var(--font-cinzel), serif;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.workBtn:hover {
+    background-color: #a4865d;
+    color: #161311;
 }
 
 @media (max-width: 768px) {
@@ -421,6 +587,12 @@
         display: flex;
         flex-direction: column;
         border-top: none;
+    }
+    .promiseCol.middle {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid rgba(164, 134, 93, 0.2);
+        border-bottom: 1px solid rgba(164, 134, 93, 0.2);
     }
     .timelineDivider {
         width: 100%;

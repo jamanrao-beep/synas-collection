@@ -160,8 +160,67 @@ export default function HowWeWorkPage() {
 
             {/* --- OUR PROMISE SECTION --- */}
             <section className={styles.promiseSection}>
-                <p className={styles.promiseEyebrow}>OUR PROMISE</p>
-                {/* Content for Our Promise goes here */}
+                <div className={styles.promiseHeader}>
+                    <p className={styles.eyebrow}>OUR PROMISE</p>
+                    <h2>The Standards We <em>Never</em> Compromise</h2>
+                    <p className={styles.subtitle}>Three principles that have guided every piece since 2013.</p>
+                    <div className={styles.hRule}></div>
+                </div>
+
+                <div className={styles.promiseGrid}>
+                    {/* Column 1 */}
+                    <div className={styles.promiseCol}>
+                        <div className={styles.promiseIcon}>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Never <em>Mass Produced</em></h3>
+                        <p>
+                            Every piece in the collection is made individually, by hand. We do not operate production lines, minimum orders, or repeat runs. If it exists, it was made once, for one purpose.
+                        </p>
+                    </div>
+
+                    {/* Column 2 */}
+                    <div className={`${styles.promiseCol} ${styles.middle}`}>
+                        <div className={styles.promiseIcon}>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Heritage <em>Materials</em></h3>
+                        <p>
+                            We source antique silver elements handcrafted by the master craftsmen of a bygone era. These are not reproductions. They are originals — carrying the marks of the hands that first made them.
+                        </p>
+                    </div>
+
+                    {/* Column 3 */}
+                    <div className={styles.promiseCol}>
+                        <div className={styles.promiseIcon}>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Premium <em>Finishing</em></h3>
+                        <p>
+                            The final stage of every piece is where character is confirmed. Detail, surface, weight, proportion — each is assessed against a standard that has been refined over years and will not be lowered.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* --- WORK WITH US SECTION --- */}
+            <section className={styles.workWithUsSection}>
+                <div className={styles.workVerticalLine}></div>
+                <p className={styles.eyebrow}>WORK WITH US</p>
+                <h2>Something <em>Made</em><br/>Only for You</h2>
+                <p className={styles.description}>
+                    For those who want a piece that begins with their own story, Twinkle works directly with clients on bespoke commissions — from concept to creation.
+                </p>
+                <a href="/contact" className={styles.workBtn}>BEGIN A CONVERSATION</a>
             </section>
         </main>
     );
