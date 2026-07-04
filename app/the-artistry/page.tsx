@@ -1,9 +1,9 @@
-import PremiumCollectionSection from '@/components/PremiumCollectionSection';
+import JourneySection from '@/components/JourneySection';
 
 export default function TheArtistryPage() {
     return (
         <main>
-            <PremiumCollectionSection />
+            <JourneySection />
         </main>
     );
 }
