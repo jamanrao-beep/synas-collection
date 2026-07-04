@@ -13,6 +13,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Meticulous Procurement',
         description:
             "Original antique silver treasures, handcrafted elements from bygone eras, natural and semi precious stones, and rare hand painted artworks are meticulously procured and curated for their history, character, rarity, and potential to be reimagined. Each discovery is sourced through travel and personal curation, chosen for the depth and distinction it can bring to a Syna 'S creation.",
+        video: '/The%20Art%20of%20Meticulous%20Procurement.mov'
     },
     {
         number: '02',
@@ -32,6 +33,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Design Alchemy',
         description:
             'Rare discoveries gathered through travel, personal curation, and a discerning eye are brought together with antique elements, natural stones, miniature artworks, and newly handcrafted details through meticulous composition, assembly, and reinvention. Each design is assembled, reassembled, balanced, and technically refined to transform the vision into a wearable work of art. Stones may be hand carved, elements reshaped, and details reworked until proportion, craftsmanship, and meaning align.',
+        video: '/The%20Art%20of%20Design%20Alchemy.mov'
     },
     {
         number: '03',
@@ -47,6 +49,7 @@ const JOURNEY_STEPS = [
         title: 'The Philosophy of Rarity',
         description:
             "At Syna 'S CoLection, rarity is not a coincidence or a detail - it is the philosophy we follow. Every piece is designed in house and handcrafted around rare, limited, and often irreplaceable elements, making mass production neither possible nor part of our world. Each creation is refined and brought to life with its own character, identity, presence, and soul. No repetition. Only rare creations made to stand apart - so every Syna 'S client does too.",
+        video: ''
     },
     {
         number: '04',
@@ -58,6 +61,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Enduring Meaning',
         description:
             "Every finished Syna 'S CoLection piece tells a story through meticulous detailing, refined finishing, and soulful craftsmanship. Created beyond fast fashion, each piece is made to be worn with pride, reworn with new meaning, and cherished across time. With every wear, it carries a different emotion, a deeper connection, and a story worth passing forward.",
+        video: ''
     },
 ];
 
@@ -70,15 +74,36 @@ export default function JourneySection() {
                 <div className={styles.separator}></div>
             </div>
             
-            <div className={styles.grid}>
-                {JOURNEY_STEPS.map((step) => (
-                    <div key={step.number} className={styles.column}>
-                        <span className={styles.number}>{step.number}</span>
-                        <div className={styles.iconWrap}>{step.icon}</div>
-                        <h3 className={styles.columnTitle}>{step.title}</h3>
-                        <p className={styles.columnDesc}>{step.description}</p>
-                    </div>
-                ))}
+            <div className={styles.rowsContainer}>
+                {JOURNEY_STEPS.map((step, index) => {
+                    const isEven = index % 2 !== 0;
+                    return (
+                        <div key={step.number} className={`${styles.row} ${isEven ? styles.rowReverse : ''}`}>
+                            <div className={styles.textContent}>
+                                <span className={styles.number}>{step.number}</span>
+                                <div className={styles.iconWrap}>{step.icon}</div>
+                                <h3 className={styles.columnTitle}>{step.title}</h3>
+                                <p className={styles.columnDesc}>{step.description}</p>
+                            </div>
+                            <div className={styles.videoContent}>
+                                {step.video ? (
+                                    <video 
+                                        src={step.video}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className={styles.video}
+                                    />
+                                ) : (
+                                    <div className={styles.videoPlaceholder}>
+                                        <span>Video Coming Soon</span>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </section>
     );
