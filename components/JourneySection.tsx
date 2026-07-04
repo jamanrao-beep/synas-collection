@@ -13,7 +13,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Meticulous Procurement',
         description:
             "Original antique silver treasures, handcrafted elements from bygone eras, natural and semi precious stones, and rare hand painted artworks are meticulously procured and curated for their history, character, rarity, and potential to be reimagined. Each discovery is sourced through travel and personal curation, chosen for the depth and distinction it can bring to a Syna 'S creation.",
-        video: '/The%20Art%20of%20Meticulous%20Procurement.mov'
+        video: '/meticulous_procurement.mov'
     },
     {
         number: '02',
@@ -33,7 +33,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Design Alchemy',
         description:
             'Rare discoveries gathered through travel, personal curation, and a discerning eye are brought together with antique elements, natural stones, miniature artworks, and newly handcrafted details through meticulous composition, assembly, and reinvention. Each design is assembled, reassembled, balanced, and technically refined to transform the vision into a wearable work of art. Stones may be hand carved, elements reshaped, and details reworked until proportion, craftsmanship, and meaning align.',
-        video: '/The%20Art%20of%20Design%20Alchemy.mov'
+        video: '/design_alchemy.mov'
     },
     {
         number: '03',
