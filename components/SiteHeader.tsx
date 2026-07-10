@@ -22,6 +22,7 @@ export default function SiteHeader() {
     const activeHref = pathname || '/';
     const [menuOpen, setMenuOpen] = useState(false);
     const [navHidden, setNavHidden] = useState(false);
+    const isHome = activeHref === '/';
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -43,7 +44,7 @@ export default function SiteHeader() {
     }, []);
 
     return (
-        <div className={styles.headerWrapper}>
+        <div className={`${styles.headerWrapper} ${isHome ? styles.isHome : ''}`}>
             <header className={styles.siteHeader}>
                 <div className={styles.headerInner}>
                     <button
