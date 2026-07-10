@@ -10,7 +10,7 @@ export default function HeritageSection() {
 
                 <h2 className={styles.title}>
                     <span className={styles.titleWhite}>Heritage Reimagined</span>
-                    <span className={styles.titleBlack}>Handcrafted With Soul</span>
+                    <span className={styles.titleWhiteitalic}>Handcrafted With Soul</span>
                 </h2>
 
                 <div className={styles.separator}></div>

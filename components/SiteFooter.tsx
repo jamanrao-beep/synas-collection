@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteFooter.module.css';
-import footerLogo from '@/public/footer_logo.png';
+import footerLogo from '@/public/bronze-logo.jpeg';
 
 export default function SiteFooter() {
     return (
@@ -23,7 +23,7 @@ export default function SiteFooter() {
                             alt="Syna's Collection"
                             width={220}
                             height={55}
-                            style={{ objectFit: 'contain' }}
+                            style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
                         />
                     </Link>
                     <p className={styles.tagline}>
