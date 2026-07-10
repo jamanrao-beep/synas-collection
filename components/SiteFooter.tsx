@@ -17,13 +17,15 @@ export default function SiteFooter() {
             <div className={styles.container}>
                 {/* Left Column - Brand */}
                 <div className={styles.brandCol}>
-                    <Link href="/" className={styles.logoWrap} aria-label="Syna's Collection — Home">
+                    <Link href="/" className={styles.logoWrap}>
                         <Image
                             src={footerLogo}
                             alt="Syna's Collection"
                             width={220}
                             height={55}
-                            style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
+                            style={{ 
+                                objectFit: 'contain'
+                            }}
                         />
                     </Link>
                     <p className={styles.tagline}>

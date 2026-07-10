@@ -36,37 +36,40 @@
 .line {
     width: 30px;
     height: 1px;
-    background-color: #b59569; /* Gold line */
+    background-color: #8A6A35;
 }
 
 .subtitle {
     font-family: var(--font-cinzel), serif;
     font-size: 11px;
     letter-spacing: 0.35em;
-    color: #b59569; /* Gold */
+    color: #8A6A35;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .title {
     font-family: var(--font-cormorant), serif;
-    font-size: 42px;
-    line-height: 1.15;
-    color: #ffffff;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: clamp(24px, 2.4vw, 30px);
+    letter-spacing: 0.01em;
+    color: #2A170C;
     margin-bottom: 32px;
+    line-height: 1.25;
 }
 
 .title i {
     font-family: var(--font-playfair), serif;
     font-style: italic;
-    color: #b59569; /* Gold */
+    color: #8A6A35;
 }
 
 .description {
     font-family: var(--font-raleway), sans-serif;
-    font-size: 13px;
-    line-height: 1.8;
-    color: #a0a0a0;
+    font-size: 16px;
+    line-height: 1.9;
+    color: rgba(42, 23, 12, 0.85);
+    font-weight: 500;
     margin-bottom: 60px;
 }
 
@@ -80,7 +83,7 @@
     align-items: flex-start;
     gap: 20px;
     padding: 24px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(42, 23, 12, 0.1);
 }
 
 .contactRow:last-child {
@@ -91,11 +94,11 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(181, 149, 105, 0.3); /* faint gold border */
+    border: 1px solid rgba(138, 106, 53, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #b59569;
+    color: #8A6A35;
     flex-shrink: 0;
 }
 
@@ -109,14 +112,16 @@
     font-family: var(--font-cinzel), serif;
     font-size: 9px;
     letter-spacing: 0.25em;
-    color: #b59569;
+    color: #8A6A35;
     margin-bottom: 4px;
+    font-weight: 600;
 }
 
 .contactValue {
     font-family: var(--font-raleway), sans-serif;
-    font-size: 13px;
-    color: #d0d0d0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2A170C;
 }
 
 /* --- RIGHT PANEL --- */
@@ -135,12 +140,12 @@
 }
 
 .formTitle {
-    font-family: var(--font-playfair), serif;
-    font-size: 32px;
-    color: #ffffff;
+    font-family: var(--font-cormorant), serif;
+    font-size: clamp(24px, 2.4vw, 30px);
+    font-weight: 600;
+    color: #2A170C;
     text-align: center;
     margin-bottom: 40px;
-    font-weight: 500;
 }
 
 .form {
@@ -159,7 +164,7 @@
     font-family: var(--font-raleway), sans-serif;
     font-size: 12px;
     font-weight: 700;
-    color: #ffffff;
+    color: #4A2A1A;
 }
 
 .required {
@@ -171,22 +176,22 @@
 .input {
     width: 100%;
     padding: 16px;
-    background-color: #f8f9fc;
-    border: none;
+    background-color: transparent;
+    border: 1px solid rgba(42, 23, 12, 0.2);
     border-radius: 6px;
     font-family: var(--font-raleway), sans-serif;
-    font-size: 13px;
-    color: #333;
+    font-size: 14px;
+    color: #2A170C;
     outline: none;
 }
 
 .input::placeholder {
-    color: #a0a0a0;
+    color: #8c7355;
 }
 
 .submitBtn {
-    background-color: #cdb381; /* soft gold button */
-    color: #ffffff;
+    background-color: #2A170C; 
+    color: #f7f3ec;
     border: none;
     border-radius: 6px;
     padding: 16px;

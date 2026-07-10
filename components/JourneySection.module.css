@@ -17,7 +17,7 @@
     font-weight: 600 !important;
     letter-spacing: 0.45em !important;
     text-transform: uppercase !important;
-    color: var(--color-antique-gold) !important;
+    color: black;
     margin: 0 0 16px 0 !important;
     display: block !important;
 }
@@ -76,7 +76,7 @@
 .video {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     object-fit: cover;
 }
 
@@ -91,7 +91,7 @@
     border-radius: 12px;
     font-family: var(--font-playfair), serif;
     font-size: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 .number {
@@ -143,19 +143,21 @@
 }
 
 @media (max-width: 768px) {
-    .row, .rowReverse {
+
+    .row,
+    .rowReverse {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .textContent {
         align-items: center;
     }
-    
+
     .columnDesc {
         text-align: center;
     }
-    
+
     .rowsContainer {
         gap: 80px;
     }

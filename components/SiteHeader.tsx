@@ -9,7 +9,6 @@ import whiteLogo from '@/public/white-logo.jpeg';
 import bronzeLogo from '@/public/bronze-logo.jpeg';
 
 const NAV_LINKS = [
-    { label: 'Home', href: '/' },
     { label: 'Our Story', href: '/our-story' },
     { label: 'The Artistry', href: '/the-artistry' },
     { label: 'Premium Collections', href: '/premium-collections' },
