@@ -50,8 +50,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${marcellus.variable} ${cormorant.variable} ${raleway.variable} ${playfair.variable} ${cinzel.variable}`}>
-        <SiteHeader />
         {children}
+        <SiteHeader />
         <SiteFooter />
         
         {/* Global Floating WhatsApp Button */}

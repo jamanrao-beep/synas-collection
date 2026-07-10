@@ -4,7 +4,7 @@ export default function HeroVideo() {
             style={{
                 position: 'relative',
                 width: '100%',
-                aspectRatio: '16 / 11',
+                height: '100vh',
                 overflow: 'hidden',
                 background: '#000',
             }}
