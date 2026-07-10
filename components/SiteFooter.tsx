@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteFooter.module.css';
-import footerLogo from '@/public/bronze-logo.jpeg';
+import footerLogo from '@/public/bronze_logo-removebg-preview.png';
 
 export default function SiteFooter() {
     return (
