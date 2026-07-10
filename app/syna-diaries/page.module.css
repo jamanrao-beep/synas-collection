@@ -1,5 +1,5 @@
 .main {
-    background-color: #a47c59; /* Warm mocha background matching the screenshot */
+    background-color: transparent;
     min-height: 100vh;
     padding: 80px 20px 120px;
     display: flex;
@@ -23,14 +23,14 @@
 .line {
     height: 1px;
     width: 60px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(43, 30, 20, 0.4);
 }
 
 .subtitle {
     font-family: var(--font-cinzel), serif;
     font-size: 13px;
     letter-spacing: 0.35em;
-    color: #f7e8da;
+    color: var(--color-parchment-text);
     text-transform: uppercase;
     font-weight: 500;
     margin: 0;
@@ -40,7 +40,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 48px;
     line-height: 1.25;
-    color: #ffffff;
+    color: var(--color-parchment-text);
     font-weight: 400;
 }
 

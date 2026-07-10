@@ -43,7 +43,7 @@ export default function SiteHeader() {
     }, []);
 
     return (
-        <>
+        <div className={styles.headerWrapper}>
             <header className={styles.siteHeader}>
                 <div className={styles.headerInner}>
                     <button
@@ -94,6 +94,6 @@ export default function SiteHeader() {
                     ))}
                 </div>
             </nav>
-        </>
+        </div>
     );
 }

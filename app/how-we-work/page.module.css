@@ -1,5 +1,5 @@
 .main {
-    background-color: #0d0b09; /* Dark background */
+    background-color: transparent;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 96px; /* Massive hero text */
     font-weight: 400;
-    color: #ffffff;
+    color: var(--color-parchment-text);
     line-height: 1.1;
     margin-bottom: 24px;
 }
@@ -58,7 +58,8 @@
     font-family: var(--font-cormorant), serif;
     font-size: 20px;
     font-style: italic;
-    color: #8f8273; /* muted taupe */
+    color: var(--color-parchment-text);
+    opacity: 0.85;
     line-height: 1.6;
     margin-bottom: 80px;
 }
@@ -71,7 +72,7 @@
 }
 /* --- LIGHT SECTION --- */
 .videoSection {
-    background-color: #e0d9cd; /* Darkened previous segment */
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -109,7 +110,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 48px;
     font-weight: 400;
-    color: #2b2622;
+    color: var(--color-parchment-text);
     line-height: 1.15;
     margin-bottom: 40px;
     margin-top: 0;
@@ -131,7 +132,8 @@
 .videoContent p:not(.eyebrow) {
     font-family: var(--font-cormorant), serif;
     font-size: 19px;
-    color: #594f44;
+    color: var(--color-parchment-text);
+    opacity: 0.9;
     line-height: 2.0;
     margin-bottom: 40px;
     max-width: 500px;
@@ -156,7 +158,7 @@
 }
 
 .videoPlaceholder {
-    background-color: #e5e0d7;
+    background-color: rgba(255, 255, 255, 0.4);
     height: 100%; /* Stretches to the exact height of the text block */
     min-height: 500px;
     position: relative;
@@ -219,7 +221,8 @@
     font-family: var(--font-cinzel), serif;
     font-size: 8px;
     letter-spacing: 0.25em;
-    color: #928373;
+    color: var(--color-parchment-text);
+    opacity: 0.7;
     text-transform: uppercase;
     line-height: 1.8;
 }
@@ -252,9 +255,8 @@
     }
 }
 
-/* --- THE JOURNEY SECTION --- */
 .journeySection {
-    background-color: #f8f6f0; /* Lighter, whiter beige */
+    background-color: transparent;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -399,7 +401,7 @@
 
 /* --- OUR PROMISE SECTION --- */
 .promiseSection {
-    background-color: #e6e0d4; /* Darker beige from screenshot */
+    background-color: transparent;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -508,7 +510,7 @@
 
 /* --- WORK WITH US SECTION --- */
 .workWithUsSection {
-    background-color: #161311; /* Very dark charcoal/brown */
+    background-color: transparent;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -538,7 +540,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 64px;
     font-weight: 400;
-    color: #f8f6f0;
+    color: var(--color-parchment-text);
     line-height: 1.1;
     margin-bottom: 30px;
     margin-top: 0;
@@ -554,7 +556,8 @@
     font-family: var(--font-cormorant), serif;
     font-size: 20px;
     font-style: italic;
-    color: #8a7a6b;
+    color: var(--color-parchment-text);
+    opacity: 0.8;
     line-height: 1.8;
     max-width: 600px;
     margin-bottom: 50px;

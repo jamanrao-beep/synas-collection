@@ -1,5 +1,5 @@
 .heritageSection {
-    background: linear-gradient(135deg, #d8bc98 0%, #ba956a 100%);
+    background: transparent;
     padding: 100px 24px;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
     font-weight: 600;
     letter-spacing: 0.45em;
     text-transform: uppercase;
-    color: #2A170C;
+    color: var(--color-antique-gold);
     margin: 0 0 24px 0;
     display: block;
 }
@@ -36,7 +36,7 @@
     font-size: clamp(42px, 6vw, 72px);
     font-weight: 400;
     line-height: 1.15;
-    color: #F7F3EC;
+    color: var(--color-antique-gold);
     margin: 0 0 6px 0;
     letter-spacing: -0.01em;
     display: block;
@@ -56,7 +56,7 @@
 .separator {
     width: 40px;
     height: 1px;
-    background-color: #2b251e;
+    background-color: var(--color-turquoise-accent);
     margin: 0 auto 36px auto;
 }
 

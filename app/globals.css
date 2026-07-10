@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Premium Palette */
+  --color-parchment: #D9C4A5;
+  --color-parchment-text: #2B1E14;
+  --color-antique-gold: #B88A3B;
+  --color-turquoise-accent: #1F7A7A;
+  --color-velvet-black: #080605;
 }
 
 @theme inline {
@@ -50,9 +57,8 @@ body {
   background-image: url('/background.jpeg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  color: var(--foreground);
+  color: var(--color-parchment-text);
   margin: 0;
   font-family: var(--font-cormorant), serif;
 }

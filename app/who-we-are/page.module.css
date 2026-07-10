@@ -1,5 +1,5 @@
 .main {
-    background-color: #0d0b09; /* Very dark background from screenshot */
+    background-color: transparent;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,12 +29,12 @@
     font-family: var(--font-cinzel), serif;
     font-size: 9px;
     letter-spacing: 0.35em;
-    color: #b09060;
+    color: var(--color-antique-gold);
     text-transform: uppercase;
 }
 
 .dot {
-    color: #b09060;
+    color: var(--color-antique-gold);
     font-size: 10px;
 }
 
@@ -42,7 +42,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 64px;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--color-parchment-text);
     line-height: 1.1;
     margin-bottom: 32px;
 }
@@ -50,14 +50,15 @@
 .italicText {
     font-family: var(--font-playfair), serif;
     font-style: italic;
-    color: #c2a373; /* soft gold */
+    color: var(--color-antique-gold);
 }
 
 .description {
     font-family: var(--font-cormorant), serif;
     font-size: 16px;
     font-style: italic;
-    color: #8f8273; /* muted taupe/gold */
+    color: var(--color-parchment-text);
+    opacity: 0.85;
     line-height: 1.6;
     margin-bottom: 60px;
 }
@@ -90,7 +91,7 @@
     font-family: var(--font-cinzel), serif;
     font-size: 11px;
     letter-spacing: 0.4em;
-    color: #b09060;
+    color: var(--color-antique-gold);
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -154,7 +155,8 @@
     font-family: var(--font-cinzel), serif;
     font-size: 10px;
     letter-spacing: 0.3em;
-    color: #594f44;
+    color: var(--color-parchment-text);
+    opacity: 0.7;
     text-transform: uppercase;
 }
 
@@ -195,7 +197,7 @@
     font-family: var(--font-cinzel), serif;
     font-size: 9px;
     letter-spacing: 0.35em;
-    color: #b09060;
+    color: var(--color-antique-gold);
     text-transform: uppercase;
     margin-bottom: 24px;
 }
@@ -204,7 +206,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 52px;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--color-parchment-text);
     line-height: 1.1;
     margin-bottom: 24px;
 }
@@ -213,7 +215,8 @@
     font-family: var(--font-cinzel), serif;
     font-size: 10px;
     letter-spacing: 0.3em;
-    color: #8f8273;
+    color: var(--color-parchment-text);
+    opacity: 0.7;
     text-transform: uppercase;
     margin-bottom: 32px;
 }
@@ -229,7 +232,8 @@
 .bodyText {
     font-family: var(--font-cormorant), serif;
     font-size: 17px;
-    color: #8f8273;
+    color: var(--color-parchment-text);
+    opacity: 0.85;
     line-height: 2.1; /* Much looser line height */
     margin-bottom: 40px; /* Much bigger gap between paragraphs */
 }
@@ -256,7 +260,7 @@
 .statNumber {
     font-family: var(--font-cormorant), serif;
     font-size: 48px;
-    color: #ffffff;
+    color: var(--color-parchment-text);
     line-height: 1;
 }
 
@@ -264,12 +268,12 @@
     font-family: var(--font-cinzel), serif;
     font-size: 8px;
     letter-spacing: 0.2em;
-    color: #b09060;
+    color: var(--color-antique-gold);
     text-transform: uppercase;
 }
 
 .quoteBox {
-    background-color: #120e0c;
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 40px;
     margin-top: 50px;
     border: 1px solid rgba(176, 144, 96, 0.1);
@@ -279,7 +283,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 18px;
     font-style: italic;
-    color: #d0d0d0;
+    color: var(--color-parchment-text);
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -288,7 +292,7 @@
     font-family: var(--font-cinzel), serif;
     font-size: 9px;
     letter-spacing: 0.3em;
-    color: #b09060;
+    color: var(--color-antique-gold);
     text-transform: uppercase;
 }
 
@@ -302,14 +306,14 @@
 }
 
 .achievementIcon {
-    color: #b09060;
+    color: var(--color-antique-gold);
 }
 
 .achievementText {
     font-family: var(--font-cinzel), serif;
     font-size: 9px;
     letter-spacing: 0.2em;
-    color: #b09060;
+    color: var(--color-antique-gold);
     text-transform: uppercase;
 }
 
