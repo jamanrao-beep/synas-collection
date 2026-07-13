@@ -5,13 +5,9 @@ export default function OurStoryPage() {
     return (
         <main className={styles.main}>
             <div className={styles.container}>
-                <div className={styles.topSubtitle}>
-                    <span className={`${styles.subtitleText} ${heritageStyles.style1}`} style={{ fontSize: '12px' }}>OUR STORY</span>
-                </div>
-                
                 <h1 className={styles.title}>
                     <span className={heritageStyles.style1} style={{ fontSize: '18px', letterSpacing: '0.25em', display: 'block', marginBottom: '16px' }}>THE HEART OF</span>
-                    <span className={heritageStyles.style2}>Syna 'S CoLection</span>
+                    <span className={heritageStyles.style1} style={{ fontSize: '48px', letterSpacing: '0.15em' }}>SYNA 'S COLECTION</span>
                 </h1>
                 
                 <div className={styles.verticalLine}></div>
