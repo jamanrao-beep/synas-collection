@@ -11,13 +11,14 @@ export default function ContactFormSection() {
                 <div className={styles.leftPanel}>
                     <div className={styles.leftContent}>
                         <div className={styles.headerSmall}>
-                            <span className={styles.line}></span>
                             <span className={`${styles.subtitle} ${heritageStyles.style1}`}>GET IN TOUCH</span>
                         </div>
                         
                         <h2 className={styles.title}>
-                            <span className={heritageStyles.style1} style={{ fontSize: '14px', letterSpacing: '0.3em' }}>Every Syna 'S Piece Begins With a</span>
-                            <span className={heritageStyles.style2}>Conversation</span>
+                            <span className={heritageStyles.style1} style={{ fontSize: '13px', letterSpacing: '0.25em', lineHeight: '1.6' }}>
+                                EVERY SYNA 'S PIECE<br/>BEGINS WITH A
+                            </span>
+                            <span className={heritageStyles.style2} style={{ marginTop: '-10px' }}>Conversation</span>
                         </h2>
                         
                         <p className={styles.description}>
