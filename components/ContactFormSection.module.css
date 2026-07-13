@@ -67,10 +67,11 @@
 .description {
     font-family: var(--font-raleway), sans-serif;
     font-size: 16px;
-    line-height: 1.9;
-    color: rgba(42, 23, 12, 0.85);
+    line-height: 1.95;
+    color: #2A170C;
     font-weight: 500;
     margin-bottom: 60px;
+    letter-spacing: 0.02em;
 }
 
 .contactRows {
@@ -119,9 +120,10 @@
 
 .contactValue {
     font-family: var(--font-raleway), sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: #2A170C;
+    letter-spacing: 0.02em;
 }
 
 /* --- RIGHT PANEL --- */
@@ -144,7 +146,7 @@
     font-size: clamp(24px, 2.4vw, 30px);
     font-weight: 600;
     color: #2A170C;
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
 }
 
@@ -162,9 +164,10 @@
 
 .label {
     font-family: var(--font-raleway), sans-serif;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 600;
     color: #4A2A1A;
+    letter-spacing: 0.02em;
 }
 
 .required {
@@ -190,19 +193,19 @@
 }
 
 .submitBtn {
-    background-color: #2A170C; 
-    color: #f7f3ec;
+    background-color: #122421; 
+    color: #B88A3B;
     border: none;
-    border-radius: 6px;
-    padding: 16px;
-    font-family: var(--font-raleway), sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    border-radius: 50px;
+    padding: 14px 40px;
+    font-family: var(--font-cormorant), serif;
+    font-size: 22px;
+    font-weight: 500;
     cursor: pointer;
     margin-top: 16px;
-    width: 150px;
     align-self: center; /* Center the button in the form */
     transition: opacity 0.2s;
+    letter-spacing: 0.02em;
 }
 
 .submitBtn:hover {

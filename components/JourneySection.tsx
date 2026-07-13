@@ -1,4 +1,5 @@
 import styles from './JourneySection.module.css';
+import heritageStyles from './HeritageSection.module.css';
 
 const JOURNEY_STEPS = [
     {
@@ -70,8 +71,10 @@ export default function JourneySection() {
         <section className={styles.journeySection}>
             <div className={styles.header}>
                 <span className={styles.subtitle}>THE JOURNEY BEHIND EACH CREATION</span>
-                <h2 className={styles.title}>From Rare Discoveries to Future Heirloom</h2>
-                <div className={styles.separator}></div>
+                <h2 className={`${styles.title} ${heritageStyles.style2}`}>From Rare Discoveries to Future Heirloom</h2>
+                <div className={styles.separator}>
+                    <img src="/border_flower.png" alt="Ornament" style={{ width: '250px', height: 'auto', objectFit: 'contain' }} />
+                </div>
             </div>
             
             <div className={styles.rowsContainer}>
@@ -82,8 +85,8 @@ export default function JourneySection() {
                             <div className={styles.textContent}>
                                 <span className={styles.number}>{step.number}</span>
                                 <div className={styles.iconWrap}>{step.icon}</div>
-                                <h3 className={styles.columnTitle}>{step.title}</h3>
-                                <p className={styles.columnDesc}>{step.description}</p>
+                                <h3 className={`${styles.columnTitle} ${heritageStyles.style2}`}>{step.title}</h3>
+                                <p className={`${styles.columnDesc} ${heritageStyles.style3}`}>{step.description}</p>
                             </div>
                             <div className={styles.videoContent}>
                                 {step.video ? (

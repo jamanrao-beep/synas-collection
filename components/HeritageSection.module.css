@@ -12,7 +12,7 @@
     width: 100%;
 }
 
-.subtitle {
+.style1 {
     font-family: var(--font-cinzel), serif;
     font-size: 20px;
     font-weight: 600;
@@ -27,7 +27,7 @@
     font-family: var(--font-cormorant), serif;
     font-size: 68px;
     line-height: 1.1;
-    margin: 0 0 32px 0;
+    margin: 0 0 12px 0;
     font-weight: 600;
 }
 
@@ -42,7 +42,7 @@
     display: block;
 }
 
-.titleWhiteitalic {
+.style2 {
     font-family: var(--font-playfair), serif;
     font-size: clamp(42px, 6vw, 72px);
     font-weight: 400;
@@ -66,13 +66,12 @@
 }
 
 .separator {
-    width: 40px;
-    height: 1px;
-    background-color: var(--color-turquoise-accent);
-    margin: 0 auto 36px auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 12px auto;
 }
 
-.description {
+.style3 {
     font-family: var(--font-raleway), sans-serif;
     font-size: 18px;
     font-weight: 600;

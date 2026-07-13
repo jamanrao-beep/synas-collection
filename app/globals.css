@@ -70,3 +70,34 @@ body {
 a {
   color: inherit;
 }
+
+/* Reusable Typography Styles */
+.style1 {
+  font-family: var(--font-cinzel), serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: #000000;
+  display: block;
+}
+
+.style2 {
+  font-family: var(--font-playfair), serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.15;
+  color: #f7f3ec;
+  letter-spacing: -0.01em;
+  display: block;
+}
+
+.style3 {
+  font-family: var(--font-raleway), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.95;
+  color: #2A170C;
+  letter-spacing: 0.03em;
+}

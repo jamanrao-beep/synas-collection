@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './ContactFormSection.module.css';
+import heritageStyles from './HeritageSection.module.css';
 
 export default function ContactFormSection() {
     return (
@@ -11,13 +12,12 @@ export default function ContactFormSection() {
                     <div className={styles.leftContent}>
                         <div className={styles.headerSmall}>
                             <span className={styles.line}></span>
-                            <span className={styles.subtitle}>GET IN TOUCH</span>
+                            <span className={`${styles.subtitle} ${heritageStyles.style1}`}>GET IN TOUCH</span>
                         </div>
                         
                         <h2 className={styles.title}>
-                            Every Syna 'S<br />
-                            Piece Begins<br />
-                            With a <i>Conversation</i>
+                            <span className={heritageStyles.style1} style={{ fontSize: '14px', letterSpacing: '0.3em' }}>Every Syna 'S Piece Begins With a</span>
+                            <span className={heritageStyles.style2}>Conversation</span>
                         </h2>
                         
                         <p className={styles.description}>
