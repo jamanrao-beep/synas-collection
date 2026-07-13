@@ -1,0 +1,334 @@
+.main {
+    background-color: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 220px 20px 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    position: relative;
+}
+
+.topSubtitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.subtitleText {
+    font-family: var(--font-cinzel), serif;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    color: var(--color-antique-gold);
+    text-transform: uppercase;
+}
+
+.dot {
+    color: var(--color-antique-gold);
+    font-size: 10px;
+}
+
+.title {
+    font-family: var(--font-cormorant), serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: var(--color-parchment-text);
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.italicText {
+    font-family: var(--font-playfair), serif;
+    font-style: italic;
+    color: var(--color-antique-gold);
+}
+
+.description {
+    font-family: var(--font-cormorant), serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--color-parchment-text);
+    opacity: 0.85;
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+/* --- EXPANDED SECTIONS --- */
+
+.sectionDivider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 120px 0 80px;
+}
+
+
+.dividerLine {
+    flex-grow: 1;
+    height: 1px;
+}
+
+.dividerLineLeft {
+    background: linear-gradient(to right, rgba(176, 144, 96, 0) 0%, #b09060 100%);
+}
+
+.dividerLineRight {
+    background: linear-gradient(to left, rgba(176, 144, 96, 0) 0%, #b09060 100%);
+}
+
+.dividerText {
+    font-family: var(--font-cinzel), serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: var(--color-antique-gold);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Grid Layouts */
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 100px;
+    min-height: 600px;
+}
+
+.imageCol {
+    background-color: #1a1614;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px;
+}
+
+.cornerBracket {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: #3d342b;
+    border-style: solid;
+}
+
+.cornerTopLeft {
+    top: 40px;
+    left: 40px;
+    border-width: 1px 0 0 1px;
+}
+
+.cornerTopRight {
+    top: 40px;
+    right: 40px;
+    border-width: 1px 1px 0 0;
+}
+
+.cornerBottomLeft {
+    bottom: 40px;
+    left: 40px;
+    border-width: 0 0 1px 1px;
+}
+
+.cornerBottomRight {
+    bottom: 40px;
+    right: 40px;
+    border-width: 0 1px 1px 0;
+}
+
+.imagePlaceholderText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-family: var(--font-cinzel), serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--color-parchment-text);
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+.textCol {
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Subtle Separator Between Blocks */
+.blockSeparator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: -20px auto 80px;
+    opacity: 0.5;
+}
+
+.blockSeparatorLine {
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(176, 144, 96, 0), rgba(176, 144, 96, 0.5), rgba(176, 144, 96, 0));
+}
+
+.blockSeparatorDiamond {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #b09060;
+    transform: rotate(45deg);
+    margin: 0 30px;
+}
+
+/* Typography for Sections */
+.sectionSubtitle {
+    font-family: var(--font-cinzel), serif;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    color: var(--color-antique-gold);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.sectionTitle {
+    font-family: var(--font-cormorant), serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--color-parchment-text);
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.sectionSubSubtitle {
+    font-family: var(--font-cinzel), serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--color-parchment-text);
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.shortLine {
+    width: 100%;
+    max-width: 480px;
+    height: 1px;
+    background-color: rgba(176, 144, 96, 0.2); /* Faint wide line */
+    margin-bottom: 50px;
+}
+
+.bodyText {
+    font-family: var(--font-cormorant), serif;
+    font-size: 17px;
+    color: var(--color-parchment-text);
+    opacity: 0.85;
+    line-height: 2.1; /* Much looser line height */
+    margin-bottom: 40px; /* Much bigger gap between paragraphs */
+}
+
+.bodyText:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Specific Block Elements */
+.statsRow {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(176, 144, 96, 0.2);
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.statNumber {
+    font-family: var(--font-cormorant), serif;
+    font-size: 48px;
+    color: var(--color-parchment-text);
+    line-height: 1;
+}
+
+.statLabel {
+    font-family: var(--font-cinzel), serif;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: var(--color-antique-gold);
+    text-transform: uppercase;
+}
+
+.quoteBox {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    margin-top: 50px;
+    border: 1px solid rgba(176, 144, 96, 0.1);
+}
+
+.quoteText {
+    font-family: var(--font-cormorant), serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--color-parchment-text);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.quoteAuthor {
+    font-family: var(--font-cinzel), serif;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: var(--color-antique-gold);
+    text-transform: uppercase;
+}
+
+.achievementBox {
+    margin-top: 50px;
+    padding: 24px 30px;
+    border: 1px solid rgba(176, 144, 96, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.achievementIcon {
+    color: var(--color-antique-gold);
+}
+
+.achievementText {
+    font-family: var(--font-cinzel), serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: var(--color-antique-gold);
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+    .textCol {
+        padding: 60px 40px;
+    }
+    .imageCol {
+        min-height: 400px;
+    }
+    .statsRow {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
