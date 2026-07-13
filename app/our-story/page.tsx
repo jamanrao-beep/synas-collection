@@ -19,8 +19,23 @@ export default function OurStoryPage() {
 
             {/* --- BLOCK 1: A Journey Unfolded --- */}
             <div className={styles.contentGrid}>
-                {/* Text Col Left */}
                 <div className={styles.textCol}>
+                    <div className={styles.imageCol}>
+                        <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                        
+                        <div className={styles.imagePlaceholderText}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                            TWINKLE MORBIA (MOTHER) - PORTRAIT
+                        </div>
+                    </div>
+
                     <h2 className={heritageStyles.style2} style={{ marginBottom: '16px' }}>
                         A Journey Unfolded
                     </h2>
@@ -44,23 +59,6 @@ export default function OurStoryPage() {
                         <p>In February 2026, Twinkle Morbia was recognised by Mid-Day among the 'Most Powerful 50 Women' as a 'Cross-Border Brand Builder', recognising her contribution to developing Syna 'S CoLection across the United States and India.</p>
                     </div>
                 </div>
-
-                {/* Image Col Right (Mother / Twinkle) */}
-                <div className={styles.imageCol}>
-                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
-                    
-                    <div className={styles.imagePlaceholderText}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <polyline points="21 15 16 10 5 21"/>
-                        </svg>
-                        TWINKLE MORBIA (MOTHER) - PORTRAIT
-                    </div>
-                </div>
             </div>
 
             <div className={styles.blockSeparator}>
@@ -71,8 +69,23 @@ export default function OurStoryPage() {
 
             {/* --- BLOCK 2: The Name Behind Syna --- */}
             <div className={styles.contentGrid}>
-                {/* Text Col Left */}
                 <div className={styles.textCol}>
+                    <div className={styles.imageCol}>
+                        <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                        
+                        <div className={styles.imagePlaceholderText}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                            SYNA BHUVA (DAUGHTER) - PORTRAIT
+                        </div>
+                    </div>
+
                     <h2 className={heritageStyles.style2} style={{ marginBottom: '24px' }}>
                         The Name Behind Syna
                     </h2>
@@ -85,23 +98,6 @@ export default function OurStoryPage() {
                         <p>The name is a quiet reminder that jewelry does not need to wait for an occasion. Sometimes the most meaningful pieces are simply the ones a woman chooses for herself.</p>
                     </div>
                 </div>
-
-                {/* Image Col Right (Daughter / Syna) */}
-                <div className={styles.imageCol}>
-                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
-                    
-                    <div className={styles.imagePlaceholderText}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <polyline points="21 15 16 10 5 21"/>
-                        </svg>
-                        SYNA BHUVA (DAUGHTER) - PORTRAIT
-                    </div>
-                </div>
             </div>
 
             <div className={styles.blockSeparator}>
@@ -112,8 +108,23 @@ export default function OurStoryPage() {
 
             {/* --- BLOCK 3: One Vision. Two Homes. --- */}
             <div className={styles.contentGrid}>
-                {/* Text Col Left */}
                 <div className={styles.textCol}>
+                    <div className={styles.imageCol}>
+                        <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
+                        <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
+                        
+                        <div className={styles.imagePlaceholderText}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                            BRAND PRESENCE / TWO HOMES
+                        </div>
+                    </div>
+
                     <h2 className={heritageStyles.style2} style={{ marginBottom: '24px' }}>
                         One Vision. Two Homes.
                     </h2>
@@ -138,23 +149,6 @@ export default function OurStoryPage() {
                         </div>
                         
                         <p style={{ fontStyle: 'italic', marginTop: '16px' }}>While legally independent, both entities remain united through Twinkle Morbia's creative vision, design philosophy, and distinctive design language.</p>
-                    </div>
-                </div>
-
-                {/* Image Col Right (Brand / Abstract) */}
-                <div className={styles.imageCol}>
-                    <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
-                    <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
-                    
-                    <div className={styles.imagePlaceholderText}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <polyline points="21 15 16 10 5 21"/>
-                        </svg>
-                        BRAND PRESENCE / TWO HOMES
                     </div>
                 </div>
             </div>
