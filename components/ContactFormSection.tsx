@@ -10,15 +10,25 @@ export default function ContactFormSection() {
                 {/* Left Panel */}
                 <div className={styles.leftPanel}>
                     <div className={styles.leftContent}>
-                        <div className={styles.headerSmall}>
-                            <span className={`${styles.subtitle} ${heritageStyles.style1}`}>GET IN TOUCH</span>
-                        </div>
-                        
-                        <h2 className={styles.title}>
-                            <span className={heritageStyles.style1} style={{ fontSize: '13px', letterSpacing: '0.25em', lineHeight: '1.6' }}>
-                                EVERY SYNA 'S PIECE<br/>BEGINS WITH A
+                        <h2 className={styles.title} style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <span className={heritageStyles.style1} style={{ 
+                                fontSize: 'clamp(15px, 2vw, 20px)', 
+                                letterSpacing: '0.25em', 
+                                marginBottom: '4px',
+                                whiteSpace: 'nowrap'
+                            }}>
+                                GET IN TOUCH EVERY
                             </span>
-                            <span className={heritageStyles.style2} style={{ marginTop: '-10px' }}>Conversation</span>
+                            <span className={heritageStyles.style1} style={{ 
+                                fontSize: 'clamp(12px, 1.5vw, 15px)', 
+                                letterSpacing: '0.15em', 
+                                whiteSpace: 'nowrap'
+                            }}>
+                                SYNA 'S PIECE BEGINS WITH A
+                            </span>
+                            <span className={heritageStyles.style2} style={{ marginTop: '-12px', fontSize: 'clamp(36px, 5vw, 56px)' }}>
+                                Conversation
+                            </span>
                         </h2>
                         
                         <p className={styles.description}>
