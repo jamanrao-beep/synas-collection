@@ -22,18 +22,17 @@ export default function OurStoryPage() {
                         <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
                         <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
 
-                        <div className={styles.imagePlaceholderText}>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                <circle cx="8.5" cy="8.5" r="1.5" />
-                                <polyline points="21 15 16 10 5 21" />
-                            </svg>
-                            TWINKLE MORBIA (MOTHER) - PORTRAIT
-                        </div>
+                        <img
+                            src="/founder_img.PNG"
+                            alt="Twinkle Morbia"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                        />
                     </div>
 
-                    <h2 className={heritageStyles.style2} style={{ marginBottom: '16px' }}>
-                        A Journey Unfolded
+                    <h2 style={{ marginBottom: '16px', display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'baseline' }}>
+                        <span className={heritageStyles.style2} style={{ margin: 0 }}>A </span>
+                        <span className={heritageStyles.style2} style={{ margin: 0 }}>Journey</span>
+                        <span className={heritageStyles.style4} style={{ margin: 0 }}>Unfolded</span>
                     </h2>
                     <h3 className={heritageStyles.style1} style={{ fontSize: '14px', letterSpacing: '0.15em', marginBottom: '8px' }}>
                         Twinkle Morbia
@@ -42,7 +41,7 @@ export default function OurStoryPage() {
                         Founder &bull; Creative Director &bull; Designer
                     </p>
 
-                    <div className={heritageStyles.style3} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    <div className={`${heritageStyles.style3} ${styles.storyTextContainer}`}>
                         <p>For Twinkle Morbia, creating Syna 'S CoLection was never a carefully planned business venture. It was the beginning of a journey she never expected to take.</p>
                         <p>In 2013, she found herself quietly drawn towards the world of jewelry-to exceptional craftsmanship, old-world artistry, remarkable objects, and creations that seemed to carry stories of their own. There was no jewelry business to inherit, no family workshop waiting to be continued, and no intention of entering the industry. Yet the connection felt instinctive, even if she could not explain it.</p>
                         <p>Only in 2017 did the deeper story reveal itself.</p>
@@ -72,21 +71,18 @@ export default function OurStoryPage() {
                         <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
                         <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
 
-                        <div className={styles.imagePlaceholderText}>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                <circle cx="8.5" cy="8.5" r="1.5" />
-                                <polyline points="21 15 16 10 5 21" />
-                            </svg>
-                            SYNA BHUVA (DAUGHTER) - PORTRAIT
-                        </div>
+                        <img
+                            src="/founderdaughter_img.jpg"
+                            alt="Syna Bhuva"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                        />
                     </div>
 
                     <h2 className={heritageStyles.style2} style={{ marginBottom: '24px' }}>
                         The Name Behind Syna
                     </h2>
 
-                    <div className={heritageStyles.style3} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    <div className={`${heritageStyles.style3} ${styles.storyTextContainer}`}>
                         <p style={{ fontWeight: 700 }}>Every meaningful name carries a story. Ours begins with Syna, our heartbeat.</p>
                         <p>Named after Twinkle Morbia's daughter, Syna Bhuva, the brand began as something deeply personal, rooted in love, and gradually became a reflection of the values it continues to uphold.</p>
                         <p>As the brand evolved, Syna naturally became its in-house face, appearing in editorial campaigns, fashion presentations, runway showcases in the United States, billboard advertising, and newspaper features in India.</p>
@@ -105,27 +101,19 @@ export default function OurStoryPage() {
             {/* --- BLOCK 3: One Vision. Two Homes. --- */}
             <div className={styles.contentGrid}>
                 <div className={styles.textCol}>
-                    <div className={styles.imageCol}>
-                        <div className={`${styles.cornerBracket} ${styles.cornerTopLeft}`}></div>
-                        <div className={`${styles.cornerBracket} ${styles.cornerTopRight}`}></div>
-                        <div className={`${styles.cornerBracket} ${styles.cornerBottomLeft}`}></div>
-                        <div className={`${styles.cornerBracket} ${styles.cornerBottomRight}`}></div>
-
-                        <div className={styles.imagePlaceholderText}>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                <circle cx="8.5" cy="8.5" r="1.5" />
-                                <polyline points="21 15 16 10 5 21" />
-                            </svg>
-                            BRAND PRESENCE / TWO HOMES
-                        </div>
+                    <div style={{ float: 'right', width: '45%', marginLeft: '5%', marginBottom: '20px' }}>
+                        <img
+                            src="/img3_ourstory.jpeg"
+                            alt="Brand Presence"
+                            style={{ width: '100%', height: 'auto', objectFit: 'cover', display: 'block', borderRadius: '4px' }}
+                        />
                     </div>
 
                     <h2 className={heritageStyles.style2} style={{ marginBottom: '24px' }}>
                         One Vision. Two Homes.
                     </h2>
 
-                    <div className={heritageStyles.style3} style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                    <div className={`${heritageStyles.style3} ${styles.storyTextContainer}`}>
                         <p>Syna 'S CoLection is represented through two independently registered entities, united by one creative vision.</p>
 
                         <div>

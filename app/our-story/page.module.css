@@ -169,6 +169,18 @@
     padding: 0;
 }
 
+.storyTextContainer {
+    display: block;
+}
+
+.storyTextContainer p {
+    margin-bottom: 20px;
+}
+
+.storyTextContainer p:last-child {
+    margin-bottom: 0;
+}
+
 /* Subtle Separator Between Blocks */
 .blockSeparator {
     display: flex;

@@ -5,32 +5,45 @@ import heritageStyles from './HeritageSection.module.css';
 
 export default function ContactFormSection() {
     return (
-        <section className={styles.container}>
+        <section className={styles.container} style={{ paddingTop: '80px', paddingBottom: '80px' }}>
             <div className={styles.grid}>
-                {/* Left Panel */}
-                <div className={styles.leftPanel}>
-                    <div className={styles.leftContent}>
-                        <h2 className={styles.title} style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <span className={heritageStyles.style1} style={{
-                                fontSize: 'clamp(15px, 2vw, 20px)',
-                                letterSpacing: '0.25em',
-                                marginBottom: '4px',
-                                whiteSpace: 'nowrap'
-                            }}>
-                                GET IN TOUCH EVERY
-                            </span>
-                            <span className={heritageStyles.style1} style={{
-                                fontSize: 'clamp(12px, 1.5vw, 15px)',
-                                letterSpacing: '0.15em',
-                                whiteSpace: 'nowrap'
-                            }}>
-                                SYNA 'S PIECE BEGINS WITH A
-                            </span>
-                            <span className={heritageStyles.style2} style={{ marginTop: '-12px', fontSize: 'clamp(36px, 5vw, 56px)' }}>
-                                Conversation
-                            </span>
-                        </h2>
+                {/* Top Heading inside the shaded box */}
+                <h2 className={styles.title} style={{ 
+                    gridColumn: '1 / -1',
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    alignItems: 'center', 
+                    textAlign: 'center', 
+                    width: '100%', 
+                    marginBottom: '100px',
+                    paddingTop: '60px',
+                    borderTop: '1px solid rgba(42, 23, 12, 0.2)',
+                    gap: '2px'
+                }}>
+                    <span className={heritageStyles.style1} style={{
+                        fontSize: 'clamp(28px, 4vw, 42px)',
+                        letterSpacing: '0.25em',
+                        whiteSpace: 'nowrap',
+                        textAlign: 'center'
+                    }}>
+                        GET IN TOUCH
+                    </span>
+                    <span className={heritageStyles.style4} style={{ 
+                        textAlign: 'center', 
+                        fontSize: 'clamp(18px, 2.5vw, 24px)',
+                        letterSpacing: '0.15em',
+                        whiteSpace: 'nowrap'
+                    }}>
+                        EVERY SYNA 'S PIECE BEGINS WITH A
+                    </span>
+                    <span className={heritageStyles.style2} style={{ fontSize: 'clamp(36px, 5vw, 56px)', textAlign: 'center' }}>
+                        Conversation
+                    </span>
+                </h2>
 
+                {/* Left Panel */}
+                <div className={styles.leftPanel} style={{ justifyContent: 'flex-start', paddingTop: '0px' }}>
+                    <div className={styles.leftContent}>
                         <p className={`${heritageStyles.style3} ${styles.description}`} style={{ fontWeight: 600, color: '#2A170C' }}>
                             Syna 'S CoLection is for the woman who knows her worth-the woman
                             who does not wait for an occasion, a gift, or permission to choose
@@ -88,37 +101,47 @@ export default function ContactFormSection() {
                 </div>
 
                 {/* Right Panel */}
-                <div className={styles.rightPanel}>
+                <div className={styles.rightPanel} style={{ justifyContent: 'flex-start', paddingTop: '0px' }}>
                     <div className={styles.rightContent}>
                         <h2 className={styles.formTitle}>Send an Enquiry</h2>
 
-                        <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
+                        <form className={styles.form} onSubmit={(e) => {
+                            e.preventDefault();
+                            const formData = new FormData(e.target as HTMLFormElement);
+                            const fname = formData.get('fname') || '';
+                            const lname = formData.get('lname') || '';
+                            const email = formData.get('email') || '';
+                            const subject = formData.get('subject') || '';
+                            
+                            const mailtoLink = `mailto:Contact@synascolection.com?subject=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Name: ${fname} ${lname}\nEmail: ${email}\n\n`)}`;
+                            window.location.href = mailtoLink;
+                        }}>
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
                                     First Name <span className={styles.required}>*</span>
                                 </label>
-                                <input type="text" className={styles.input} placeholder="First name here" />
+                                <input type="text" name="fname" required className={styles.input} placeholder="First name here" />
                             </div>
 
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
                                     Last Name <span className={styles.required}>*</span>
                                 </label>
-                                <input type="text" className={styles.input} placeholder="Last name here" />
+                                <input type="text" name="lname" required className={styles.input} placeholder="Last name here" />
                             </div>
 
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
                                     Email Address <span className={styles.required}>*</span>
                                 </label>
-                                <input type="email" className={styles.input} placeholder="Add email" />
+                                <input type="email" name="email" required className={styles.input} placeholder="Add email" />
                             </div>
 
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
                                     Subject <span className={styles.required}>*</span>
                                 </label>
-                                <input type="text" className={styles.input} placeholder="How can we help you?" />
+                                <input type="text" name="subject" required className={styles.input} placeholder="How can we help you?" />
                             </div>
 
                             <button type="submit" className={styles.submitBtn}>
