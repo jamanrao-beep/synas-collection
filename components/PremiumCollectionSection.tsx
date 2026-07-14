@@ -140,7 +140,7 @@ export default function PremiumCollectionSection() {
                                 <div className={styles.iconWrap}>
                                     {item.icon}
                                 </div>
-                                {item.subtitle && <h4 className={styles.subtitle}>{item.subtitle}</h4>}
+                                {item.subtitle && <h4 className={heritageStyles.style1} style={{ marginBottom: '16px', fontSize: '14px' }}>{item.subtitle}</h4>}
                                 <h2 className={heritageStyles.style2}>{item.title}</h2>
                                 <p className={heritageStyles.style3}>{item.description}</p>
                             </div>
