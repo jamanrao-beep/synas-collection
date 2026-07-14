@@ -43,15 +43,15 @@ export default function OurStoryPage() {
 
                     <div className={`${heritageStyles.style3} ${styles.storyTextContainer}`}>
                         <p>For Twinkle Morbia, creating Syna 'S CoLection was never a carefully planned business venture. It was the beginning of a journey she never expected to take.</p>
-                        <p>In 2013, she found herself quietly drawn towards the world of jewelry-to exceptional craftsmanship, old-world artistry, remarkable objects, and creations that seemed to carry stories of their own. There was no jewelry business to inherit, no family workshop waiting to be continued, and no intention of entering the industry. Yet the connection felt instinctive, even if she could not explain it.</p>
+                        <p>In 2013, she found herself quietly drawn towards the world of jewelry - to exceptional craftsmanship, old - world artistry, remarkable objects, and creations that seemed to carry stories of their own. There was no jewelry business to inherit, no family workshop waiting to be continued, and no intention of entering the industry. Yet the connection felt instinctive, even if she could not explain it.</p>
                         <p>Only in 2017 did the deeper story reveal itself.</p>
-                        <p>While discovering her family's history, Twinkle learned that generations before her, her ancestors had been respected and well-known traders in the gold and silver markets of Kutch, Gujarat. With their passing, that chapter quietly came to an end, leaving decades during which no one in the immediate family remained connected to the trade.</p>
+                        <p>While discovering her family's history, Twinkle learned that generations before her, her ancestors had been respected and well - known traders in the gold and silver markets of Kutch, Gujarat. With their passing, that chapter quietly came to an end, leaving decades during which no one in the immediate family remained connected to the trade.</p>
                         <p>Looking back, what once seemed like an unexpected path became a deeply personal rediscovery of heritage.</p>
                         <p>There was no legacy to inherit. Only an appreciation for craftsmanship. An instinct to recognise beauty. And the freedom to create something entirely her own.</p>
-                        <p>Rather than continuing an old tradition, Twinkle chose to interpret it through her own creative language-one that honours the character of the past while remaining unmistakably contemporary.</p>
-                        <p>Today, every Syna 'S CoLection creation begins with curiosity. Original antique treasures, naturally formed stones, semi-precious gemstones, handcrafted elements, miniature artworks, and traditional techniques are thoughtfully brought together through an entirely in-house design process. Each composition is refined with patience until every element feels complete, balanced, and true to its own identity.</p>
-                        <p>For Twinkle, jewelry has never been about adornment alone. It is about preserving craftsmanship, celebrating individuality, and creating pieces that quietly become part of a woman's life-pieces that are worn often, cherished deeply, and remembered for the stories they gather over time.</p>
-                        <p>In February 2026, Twinkle Morbia was recognised by Mid-Day among the 'Most Powerful 50 Women' as a 'Cross-Border Brand Builder', recognising her contribution to developing Syna 'S CoLection across the United States and India.</p>
+                        <p>Rather than continuing an old tradition, Twinkle chose to interpret it through her own creative language - one that honours the character of the past while remaining unmistakably contemporary.</p>
+                        <p>Today, every Syna 'S CoLection creation begins with curiosity. Original antique treasures, naturally formed stones, semi - precious gemstones, handcrafted elements, miniature artworks, and traditional techniques are thoughtfully brought together through an entirely in - house design process. Each composition is refined with patience until every element feels complete, balanced, and true to its own identity.</p>
+                        <p>For Twinkle, jewelry has never been about adornment alone. It is about preserving craftsmanship, celebrating individuality, and creating pieces that quietly become part of a woman's life - pieces that are worn often, cherished deeply, and remembered for the stories they gather over time.</p>
+                        <p>In February 2026, Twinkle Morbia was recognised by Mid - Day among the 'Most Powerful 50 Women' as a 'Cross-Border Brand Builder', recognising her contribution to developing Syna 'S CoLection across the United States and India.</p>
                     </div>
                 </div>
             </div>
@@ -78,15 +78,18 @@ export default function OurStoryPage() {
                         />
                     </div>
 
+                    <h2 className={heritageStyles.style4} style={{ marginBottom: '24px' }}>
+                        The Name Behind
+                    </h2>
                     <h2 className={heritageStyles.style2} style={{ marginBottom: '24px' }}>
-                        The Name Behind Syna
+                        Syna
                     </h2>
 
                     <div className={`${heritageStyles.style3} ${styles.storyTextContainer}`}>
                         <p style={{ fontWeight: 700 }}>Every meaningful name carries a story. Ours begins with Syna, our heartbeat.</p>
                         <p>Named after Twinkle Morbia's daughter, Syna Bhuva, the brand began as something deeply personal, rooted in love, and gradually became a reflection of the values it continues to uphold.</p>
                         <p>As the brand evolved, Syna naturally became its in-house face, appearing in editorial campaigns, fashion presentations, runway showcases in the United States, billboard advertising, and newspaper features in India.</p>
-                        <p>She represents the woman for whom every Syna creation is imagined-confident, expressive, graceful, and assured in her own worth.</p>
+                        <p>She represents the woman for whom every Syna creation is imagined - confident, expressive, graceful, and assured in her own worth.</p>
                         <p>The name is a quiet reminder that jewelry does not need to wait for an occasion. Sometimes the most meaningful pieces are simply the ones a woman chooses for herself.</p>
                     </div>
                 </div>
@@ -109,8 +112,11 @@ export default function OurStoryPage() {
                         />
                     </div>
 
+                    <h2 className={heritageStyles.style4} style={{ marginBottom: '24px' }}>
+                        One Vision •
+                    </h2>
                     <h2 className={heritageStyles.style2} style={{ marginBottom: '24px' }}>
-                        One Vision. Two Homes.
+                        Two Homes •
                     </h2>
 
                     <div className={`${heritageStyles.style3} ${styles.storyTextContainer}`}>
@@ -132,7 +138,7 @@ export default function OurStoryPage() {
                             <p style={{ margin: 0 }}>Launched in Mumbai in January 2026 as a separately registered entity under independent ownership.</p>
                         </div>
 
-                        <p style={{ fontStyle: 'italic', marginTop: '16px' }}>While legally independent, both entities remain united through Twinkle Morbia's creative vision, design philosophy, and distinctive design language.</p>
+                        <p className={heritageStyles.style3} style={{ fontStyle: 'italic', marginTop: '16px' }}>While legally independent, both entities remain united through Twinkle Morbia's creative vision, design philosophy, and distinctive design language.</p>
                     </div>
                 </div>
             </div>
