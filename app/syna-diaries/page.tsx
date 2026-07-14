@@ -11,7 +11,7 @@ export default function SynaDiariesPage() {
                 </div>
                 <h2 className={styles.title}>
                     <span className={`${styles.titleDark} ${heritageStyles.style1}`}>The Women</span><br />
-                    <span className={`${styles.titleGold} ${heritageStyles.style2}`}>Who Wear Syna 'S With Pride</span>
+                    <span className={heritageStyles.style2}>Who Wear Syna 'S With Pride</span>
                 </h2>
                 <div className={styles.ornament} style={{ display: 'flex', justifyContent: 'center' }}>
                     <img src="/border_flower.png" alt="Ornament" style={{ width: '150px', height: 'auto', objectFit: 'contain' }} />
