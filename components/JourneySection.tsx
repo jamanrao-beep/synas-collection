@@ -14,7 +14,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Meticulous Procurement',
         description:
             "Original antique silver treasures, handcrafted elements from bygone eras, natural and semi precious stones, and rare hand painted artworks are meticulously procured and curated for their history, character, rarity, and potential to be reimagined. Each discovery is sourced through travel and personal curation, chosen for the depth and distinction it can bring to a Syna 'S creation.",
-        video: '/meticulous_procurement.mov'
+        video: '/Meticulous-Procurement.mp4'
     },
     {
         number: '02',
@@ -34,7 +34,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Design Alchemy',
         description:
             'Rare discoveries gathered through travel, personal curation, and a discerning eye are brought together with antique elements, natural stones, miniature artworks, and newly handcrafted details through meticulous composition, assembly, and reinvention. Each design is assembled, reassembled, balanced, and technically refined to transform the vision into a wearable work of art. Stones may be hand carved, elements reshaped, and details reworked until proportion, craftsmanship, and meaning align.',
-        video: '/design_alchemy.mov'
+        video: '/design-alchemy.mp4'
     },
     {
         number: '03',
@@ -50,7 +50,7 @@ const JOURNEY_STEPS = [
         title: 'The Philosophy of Rarity',
         description:
             "At Syna 'S CoLection, rarity is not a coincidence or a detail - it is the philosophy we follow. Every piece is designed in house and handcrafted around rare, limited, and often irreplaceable elements, making mass production neither possible nor part of our world. Each creation is refined and brought to life with its own character, identity, presence, and soul. No repetition. Only rare creations made to stand apart - so every Syna 'S client does too.",
-        video: ''
+        video: '/rarity-philosophy.mp4'
     },
     {
         number: '04',
@@ -62,7 +62,7 @@ const JOURNEY_STEPS = [
         title: 'The Art of Enduring Meaning',
         description:
             "Every finished Syna 'S CoLection piece tells a story through meticulous detailing, refined finishing, and soulful craftsmanship. Created beyond fast fashion, each piece is made to be worn with pride, reworn with new meaning, and cherished across time. With every wear, it carries a different emotion, a deeper connection, and a story worth passing forward.",
-        video: ''
+        video: '/Enduring-Meaning.mp4'
     },
 ];
 

@@ -31,7 +31,7 @@ export default function ContactFormSection() {
                             </span>
                         </h2>
                         
-                        <p className={styles.description}>
+                        <p className={`${heritageStyles.style3} ${styles.description}`}>
                             Syna 'S CoLection is for the woman who knows her worth - the woman
                             who does not wait for an occasion, a gift, or permission to choose
                             something extraordinary for herself. If you are drawn to jewelry with
