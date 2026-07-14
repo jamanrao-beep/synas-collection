@@ -38,7 +38,7 @@ const COLLECTIONS = [
         ),
         subtitle: 'Exclusive',
         title: 'The House Signature',
-        description: "The defining expression of Syna 'S CoLection, this collection unites original antique fragments, newly created elements, semi-precious stones, natural stones retained in their organic form, and touches of 24K gold foil artistry. Each composition is imagined in-house, where rare elements are merged, reworked, and refined into a form entirely its own. The result is jewelry with an unmistakable identity — audacious in vision, refined in execution, and impossible to recreate exactly.",
+        description: "The defining expression of Syna 'S CoLection, this collection unites original antique fragments, newly created elements, semi-precious stones, natural stones retained in their organic form, and touches of 24K gold foil artistry. Each composition is imagined in-house, where rare elements are merged, reworked, and refined into a form entirely its own. The result is jewelry with an unmistakable identity - audacious in vision, refined in execution, and impossible to recreate exactly.",
         images: Array.from({ length: 8 }, (_, i) => `/house-signature/${i + 1}.png`)
     }
 ];
@@ -60,41 +60,41 @@ function Slideshow({ images }: { images: string[] }) {
     }, [goToNext]);
 
     return (
-        <div 
+        <div
             className={styles.slideshowContainer}
-            style={{ 
-                position: 'relative', 
+            style={{
+                position: 'relative',
                 width: '100%',
                 maxWidth: '440px',
-                aspectRatio: '4/5', 
-                borderRadius: '12px', 
+                aspectRatio: '4/5',
+                borderRadius: '12px',
                 overflow: 'hidden',
                 backgroundColor: '#2b251e',
                 boxShadow: '0 10px 40px rgba(0, 0, 0, 0.15)'
             }}
         >
             {images.map((img, index) => (
-                <img 
+                <img
                     key={img}
                     src={img}
                     alt={`Gallery Image ${index + 1}`}
                     className={`${styles.slideImage} ${index === currentIndex ? styles.active : ''}`}
-                    style={{ 
-                        position: 'absolute', 
-                        top: 0, 
-                        left: 0, 
-                        width: '100%', 
-                        height: '100%', 
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
                         objectFit: 'cover',
                         opacity: index === currentIndex ? 1 : 0,
                         transition: 'opacity 0.8s ease-in-out'
                     }}
                 />
             ))}
-            
-            <button 
-                className={`${styles.arrowBtn} ${styles.prevBtn}`} 
-                onClick={goToPrev} 
+
+            <button
+                className={`${styles.arrowBtn} ${styles.prevBtn}`}
+                onClick={goToPrev}
                 aria-label="Previous image"
                 style={{
                     position: 'absolute', top: '50%', transform: 'translateY(-50%)', left: '16px',
@@ -108,9 +108,9 @@ function Slideshow({ images }: { images: string[] }) {
                     <polyline points="15 18 9 12 15 6"></polyline>
                 </svg>
             </button>
-            <button 
-                className={`${styles.arrowBtn} ${styles.nextBtn}`} 
-                onClick={goToNext} 
+            <button
+                className={`${styles.arrowBtn} ${styles.nextBtn}`}
+                onClick={goToNext}
                 aria-label="Next image"
                 style={{
                     position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: '16px',

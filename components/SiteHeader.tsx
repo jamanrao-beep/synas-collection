@@ -12,7 +12,7 @@ const NAV_LINKS = [
     { label: 'Our Story', href: '/our-story' },
     { label: 'The Artistry', href: '/the-artistry' },
     { label: 'Premium Collections', href: '/premium-collections' },
-    { label: 'Syna Diaries', href: '/syna-diaries' },
+    { label: 'Syna \'S Diaries', href: '/syna-diaries' },
     { label: 'Contact', href: '/contact' },
 ];
 

@@ -11,17 +11,17 @@ export default function ContactFormSection() {
                 <div className={styles.leftPanel}>
                     <div className={styles.leftContent}>
                         <h2 className={styles.title} style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <span className={heritageStyles.style1} style={{ 
-                                fontSize: 'clamp(15px, 2vw, 20px)', 
-                                letterSpacing: '0.25em', 
+                            <span className={heritageStyles.style1} style={{
+                                fontSize: 'clamp(15px, 2vw, 20px)',
+                                letterSpacing: '0.25em',
                                 marginBottom: '4px',
                                 whiteSpace: 'nowrap'
                             }}>
                                 GET IN TOUCH EVERY
                             </span>
-                            <span className={heritageStyles.style1} style={{ 
-                                fontSize: 'clamp(12px, 1.5vw, 15px)', 
-                                letterSpacing: '0.15em', 
+                            <span className={heritageStyles.style1} style={{
+                                fontSize: 'clamp(12px, 1.5vw, 15px)',
+                                letterSpacing: '0.15em',
                                 whiteSpace: 'nowrap'
                             }}>
                                 SYNA 'S PIECE BEGINS WITH A
@@ -30,20 +30,20 @@ export default function ContactFormSection() {
                                 Conversation
                             </span>
                         </h2>
-                        
-                        <p className={`${heritageStyles.style3} ${styles.description}`}>
-                            Syna 'S CoLection is for the woman who knows her worth - the woman
+
+                        <p className={`${heritageStyles.style3} ${styles.description}`} style={{ fontWeight: 600, color: '#2A170C' }}>
+                            Syna 'S CoLection is for the woman who knows her worth-the woman
                             who does not wait for an occasion, a gift, or permission to choose
                             something extraordinary for herself. If you are drawn to jewelry with
                             rarity, meaning, and presence, begin the conversation with us.
                         </p>
-                        
+
                         <div className={styles.contactRows}>
                             {/* WhatsApp */}
                             <div className={styles.contactRow}>
                                 <div className={styles.iconCircle}>
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                                     </svg>
                                 </div>
                                 <div className={styles.contactText}>
@@ -57,8 +57,8 @@ export default function ContactFormSection() {
                             <div className={styles.contactRow}>
                                 <div className={styles.iconCircle}>
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                        <circle cx="12" cy="10" r="3"/>
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
                                     </svg>
                                 </div>
                                 <div className={styles.contactText}>
@@ -71,15 +71,15 @@ export default function ContactFormSection() {
                             <div className={styles.contactRow}>
                                 <div className={styles.iconCircle}>
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                        <line x1="8" y1="21" x2="16" y2="21"/>
-                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                        <line x1="8" y1="21" x2="16" y2="21" />
+                                        <line x1="12" y1="17" x2="12" y2="21" />
                                     </svg>
                                 </div>
                                 <div className={styles.contactText}>
                                     <span className={styles.contactLabel}>FOLLOW & DISCOVER</span>
                                     <span className={styles.contactValue}>
-                                        @synascollection &middot; <a href="https://www.instagram.com/synascollection/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Instagram</a> & <a href="https://www.facebook.com/synascollection/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Facebook</a>
+                                        @synascollection &middot; <a href="https://www.instagram.com/synascollection/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Instagram</a> & <a href="https://www.facebook.com/synascollection/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>Facebook</a>
                                     </span>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ export default function ContactFormSection() {
                 <div className={styles.rightPanel}>
                     <div className={styles.rightContent}>
                         <h2 className={styles.formTitle}>Send an Enquiry</h2>
-                        
+
                         <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
@@ -99,28 +99,28 @@ export default function ContactFormSection() {
                                 </label>
                                 <input type="text" className={styles.input} placeholder="First name here" />
                             </div>
-                            
+
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
                                     Last Name <span className={styles.required}>*</span>
                                 </label>
                                 <input type="text" className={styles.input} placeholder="Last name here" />
                             </div>
-                            
+
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
                                     Email Address <span className={styles.required}>*</span>
                                 </label>
                                 <input type="email" className={styles.input} placeholder="Add email" />
                             </div>
-                            
+
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
                                     Subject <span className={styles.required}>*</span>
                                 </label>
                                 <input type="text" className={styles.input} placeholder="How can we help you?" />
                             </div>
-                            
+
                             <button type="submit" className={styles.submitBtn}>
                                 Send Message
                             </button>
