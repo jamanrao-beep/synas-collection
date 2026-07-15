@@ -29,7 +29,7 @@ export default function OurStoryPage() {
                         />
                     </div>
 
-                    <h2 style={{ marginBottom: '16px', display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'baseline' }}>
+                    <h2 style={{ marginBottom: '16px', display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
                         <span className={heritageStyles.style4} style={{ margin: 0 }}>A </span>
                         <span className={heritageStyles.style2} style={{ margin: 0 }}>Journey</span>
                         <span className={heritageStyles.style4} style={{ margin: 0 }}>Unfolded</span>
