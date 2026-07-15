@@ -111,9 +111,9 @@ export default function ContactFormSection() {
                             const fname = formData.get('fname') || '';
                             const lname = formData.get('lname') || '';
                             const email = formData.get('email') || '';
-                            const subject = formData.get('subject') || '';
+                            const message = formData.get('message') || '';
                             
-                            const mailtoLink = `mailto:Contact@synascolection.com?subject=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Name: ${fname} ${lname}\nEmail: ${email}\n\n`)}`;
+                            const mailtoLink = `mailto:Contact@synascolection.com?subject=Website Enquiry&body=${encodeURIComponent(`Name: ${fname} ${lname}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
                             window.location.href = mailtoLink;
                         }}>
                             <div className={styles.inputGroup}>
@@ -139,9 +139,9 @@ export default function ContactFormSection() {
 
                             <div className={styles.inputGroup}>
                                 <label className={styles.label}>
-                                    Subject <span className={styles.required}>*</span>
+                                    Message <span className={styles.required}>*</span>
                                 </label>
-                                <input type="text" name="subject" required className={styles.input} placeholder="How can we help you?" />
+                                <textarea name="message" required className={styles.textarea} placeholder="How can we help you?" rows={4}></textarea>
                             </div>
 
                             <button type="submit" className={styles.submitBtn}>

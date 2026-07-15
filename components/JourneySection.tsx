@@ -11,7 +11,12 @@ const JOURNEY_STEPS = [
                 <polyline points="2 17 12 22 22 17"></polyline>
             </svg>
         ),
-        title: 'The Art of Meticulous Procurement',
+        title: (
+            <>
+                <span className={heritageStyles.style4}>The Art of </span>
+                <span className={heritageStyles.style2}>Meticulous Procurement</span>
+            </>
+        ),
         description:
             "Original antique silver treasures, handcrafted elements from bygone eras, natural and semi precious stones, and rare hand painted artworks are meticulously procured and curated for their history, character, rarity, and potential to be reimagined. Each discovery is sourced through travel and personal curation, chosen for the depth and distinction it can bring to a Syna 'S creation.",
         video: '/Meticulous-Procurement.mp4'
@@ -31,7 +36,12 @@ const JOURNEY_STEPS = [
                 <path d="m19.07 4.93-1.41 1.41"></path>
             </svg>
         ),
-        title: 'The Art of Design Alchemy',
+        title: (
+            <>
+                <span className={heritageStyles.style4}>The Art of </span>
+                <span className={heritageStyles.style2}>Design Alchemy</span>
+            </>
+        ),
         description:
             'Rare discoveries gathered through travel, personal curation, and a discerning eye are brought together with antique elements, natural stones, miniature artworks, and newly handcrafted details through meticulous composition, assembly, and reinvention. Each design is assembled, reassembled, balanced, and technically refined to transform the vision into a wearable work of art. Stones may be hand carved, elements reshaped, and details reworked until proportion, craftsmanship, and meaning align.',
         video: '/design-alchemy.mp4'
@@ -47,7 +57,12 @@ const JOURNEY_STEPS = [
                 <line x1="10" y1="9" x2="8" y2="9"></line>
             </svg>
         ),
-        title: 'The Philosophy of Rarity',
+        title: (
+            <>
+                <span className={heritageStyles.style4}>The Philosophy </span>
+                <span className={heritageStyles.style2}>of Rarity</span>
+            </>
+        ),
         description:
             "At Syna 'S CoLection, rarity is not a coincidence or a detail - it is the philosophy we follow. Every piece is designed in house and handcrafted around rare, limited, and often irreplaceable elements, making mass production neither possible nor part of our world. Each creation is refined and brought to life with its own character, identity, presence, and soul. No repetition. Only rare creations made to stand apart - so every Syna 'S client does too.",
         video: '/rarity-philosophy.mp4'
@@ -59,7 +74,12 @@ const JOURNEY_STEPS = [
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
         ),
-        title: 'The Art of Enduring Meaning',
+        title: (
+            <>
+                <span className={heritageStyles.style4}>The Art of </span>
+                <span className={heritageStyles.style2}>Enduring Meaning</span>
+            </>
+        ),
         description:
             "Every finished Syna 'S CoLection piece tells a story through meticulous detailing, refined finishing, and soulful craftsmanship. Created beyond fast fashion, each piece is made to be worn with pride, reworn with new meaning, and cherished across time. With every wear, it carries a different emotion, a deeper connection, and a story worth passing forward.",
         video: '/Enduring-Meaning.mp4'
@@ -85,7 +105,7 @@ export default function JourneySection() {
                             <div className={styles.textContent}>
                                 <span className={styles.number}>{step.number}</span>
                                 <div className={styles.iconWrap}>{step.icon}</div>
-                                <h3 className={`${styles.columnTitle} ${heritageStyles.style2}`}>{step.title}</h3>
+                                <h3 className={styles.columnTitle}>{step.title}</h3>
                                 <p className={`${styles.columnDesc} ${heritageStyles.style3}`}>{step.description}</p>
                             </div>
                             <div className={styles.videoContent}>

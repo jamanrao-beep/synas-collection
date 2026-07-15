@@ -138,7 +138,7 @@ export default function OurStoryPage() {
                             <p style={{ margin: 0 }}>Launched in Mumbai in January 2026 as a separately registered entity under independent ownership.</p>
                         </div>
 
-                        <p className={heritageStyles.style3} style={{ fontStyle: 'italic', marginTop: '16px' }}>While legally independent, both entities remain united through Twinkle Morbia's creative vision, design philosophy, and distinctive design language.</p>
+                        <p className={heritageStyles.style3}>While legally independent, both entities remain united through Twinkle Morbia's creative vision, design philosophy, and distinctive design language.</p>
                     </div>
                 </div>
             </div>
