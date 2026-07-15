@@ -65,7 +65,7 @@
 
 .logoWhite {
     opacity: 1;
-    transform: scale(1.35); /* Scales up the PNG to offset extra transparent padding */
+    transform: scale(1.6); /* Scales up the PNG to offset extra transparent padding */
     transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
 }
 
