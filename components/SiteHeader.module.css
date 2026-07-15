@@ -71,7 +71,7 @@
 
 .logoBronze {
     opacity: 0;
-    transform: scale(1.35); /* Match scale of white logo */
+    transform: scale(1.0); /* Reset scale to 1.0, adjust if needed */
     transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
 }
 
