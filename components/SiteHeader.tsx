@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteHeader.module.css';
 import whiteLogo from '@/public/white-logo.png';
-import bronzeLogo from '@/public/bronze-logo.jpeg';
+import bronzeLogo from '@/public/bronze_logo-removebg-preview.png';
 
 const NAV_LINKS = [
     { label: 'Premium Collections', href: '/premium-collections' },

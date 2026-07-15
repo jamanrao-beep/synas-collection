@@ -65,13 +65,14 @@
 
 .logoWhite {
     opacity: 1;
-    transform: scale(1.15); /* Scales up the PNG to offset extra transparent padding */
+    transform: scale(1.35); /* Scales up the PNG to offset extra transparent padding */
     transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
 }
 
 .logoBronze {
     opacity: 0;
-    mix-blend-mode: multiply; /* Removes white background (if any) */
+    transform: scale(1.35); /* Match scale of white logo */
+    transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
 }
 
 .headerWrapper:hover .logoWhite {
