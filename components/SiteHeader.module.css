@@ -191,7 +191,7 @@
     outline-offset: 4px;
 }
 
-/* ================= Mobile menu toggle ================= */
+/* ================= Mobile menu toggle & Sidebar ================= */
 .menuToggle {
     display: none;
     position: absolute;
@@ -220,30 +220,74 @@
     background: var(--bronze-deep);
 }
 
+.backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1150;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s var(--ease);
+}
+
+.backdropOpen {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.closeBtn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--bronze);
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 32px;
+    padding: 8px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.closeBtn:hover {
+    transform: scale(1.1);
+    color: var(--bronze-light);
+}
+
 @media (max-width: 880px) {
     .menuToggle {
         display: flex;
     }
+    
+    .backdrop {
+        display: block;
+    }
 
-    .tabNav {
-        top: 88px;
+    .closeBtn {
+        display: block;
     }
 
     .tabNavInner {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100dvh;
+        background-color: #12100e;
+        border-left: 1px solid rgba(138, 106, 53, 0.2);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
         flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        max-height: 0;
-        overflow: hidden;
-        padding: 0 32px;
-        transition:
-            max-height 0.45s var(--ease),
-            padding 0.45s var(--ease);
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 24px;
+        padding: 40px 32px;
+        transform: translateX(100%);
+        transition: transform 0.5s var(--ease);
+        z-index: 1200;
     }
 
     .tabNavInner.open {
-        max-height: 420px;
-        padding: 18px 32px;
+        transform: translateX(0);
     }
 
     .logoWrap {
