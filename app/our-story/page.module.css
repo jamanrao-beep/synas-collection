@@ -331,15 +331,41 @@
     text-transform: uppercase;
 }
 
+.block3Image {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.block3Image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
 @media (max-width: 768px) {
     .contentGrid {
         grid-template-columns: 1fr;
     }
     .textCol {
-        padding: 60px 40px;
+        padding: 60px 20px;
     }
     .imageCol {
-        min-height: 400px;
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        min-height: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .block3Image {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 30px;
     }
     .statsRow {
         flex-direction: column;

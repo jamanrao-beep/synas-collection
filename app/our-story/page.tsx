@@ -104,11 +104,10 @@ export default function OurStoryPage() {
             {/* --- BLOCK 3: One Vision. Two Homes. --- */}
             <div className={styles.contentGrid}>
                 <div className={styles.textCol}>
-                    <div style={{ float: 'right', width: '45%', marginLeft: '5%', marginBottom: '20px' }}>
+                    <div className={styles.block3Image}>
                         <img
                             src="/img3_ourstory.jpeg"
                             alt="Brand Presence"
-                            style={{ width: '100%', height: 'auto', objectFit: 'cover', display: 'block', borderRadius: '4px' }}
                         />
                     </div>
 

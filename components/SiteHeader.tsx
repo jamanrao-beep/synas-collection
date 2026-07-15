@@ -87,6 +87,7 @@ export default function SiteHeader() {
                             key={link.href}
                             href={link.href}
                             className={link.href === activeHref ? styles.active : undefined}
+                            onClick={() => setMenuOpen(false)}
                         >
                             {link.label}
                         </Link>
