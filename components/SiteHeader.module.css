@@ -65,7 +65,6 @@
 
 .logoWhite {
     opacity: 1;
-    mix-blend-mode: screen; /* Removes black background */
 }
 
 .logoBronze {

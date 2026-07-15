@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SiteHeader.module.css';
-import whiteLogo from '@/public/white-logo.jpeg';
+import whiteLogo from '@/public/white-logo.png';
 import bronzeLogo from '@/public/bronze-logo.jpeg';
 
 const NAV_LINKS = [
