@@ -9,10 +9,10 @@ import whiteLogo from '@/public/white-logo.jpeg';
 import bronzeLogo from '@/public/bronze-logo.jpeg';
 
 const NAV_LINKS = [
-    { label: 'Our Story', href: '/our-story' },
-    { label: 'The Artistry', href: '/the-artistry' },
     { label: 'Premium Collections', href: '/premium-collections' },
+    { label: 'The Artistry', href: '/the-artistry' },
     { label: 'Syna \'S Diaries', href: '/syna-diaries' },
+    { label: 'Our Story', href: '/our-story' },
     { label: 'Contact', href: '/contact' },
 ];
 
@@ -24,7 +24,7 @@ export default function SiteHeader() {
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
-        
+
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
             if (currentScrollY > lastScrollY && currentScrollY > 150) {
