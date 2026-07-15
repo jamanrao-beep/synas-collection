@@ -276,7 +276,7 @@
         right: 0;
         width: 75vw;
         height: 100dvh;
-        background-color: #12100e;
+        background-color: #ffffff;
         border-left: 1px solid rgba(138, 106, 53, 0.2);
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
         flex-direction: column;
@@ -295,5 +295,15 @@
 
     .logoWrap {
         height: 52px;
+    }
+
+    .tabNav a {
+        color: #2A170C; /* Dark text for white background */
+    }
+
+    .tabNav a:hover,
+    .tabNav a:focus-visible,
+    .tabNav a.active {
+        color: var(--bronze-deep);
     }
 }
